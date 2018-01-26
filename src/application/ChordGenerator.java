@@ -1,17 +1,63 @@
 package application;
 
-import jm.JMC;
-import jm.music.data.Note;
-import jm.util.Play;
+import jm.constants.Durations;
+import jm.music.data.CPhrase;
 
 /**
  * Created by praneilkamat on 22/01/2018.
  */
 public class ChordGenerator {
 
-    public void generateChord() {
-        Note n = new Note();
-        n.setPitch(JMC.GS4);
-        Play.midi(n);
+    private CPhrase majorChord(int rootPitch) {
+        int[] pitchArray = new int[3];
+
+        pitchArray[0] = rootPitch;
+        pitchArray[1] = rootPitch + 4;
+        pitchArray[2] = rootPitch + 7;
+
+        CPhrase chord = new CPhrase();
+        chord.addChord(pitchArray, Durations.QUARTER_NOTE);
+
+        return chord;
+    }
+
+    private CPhrase minorChord(int rootPitch) {
+        int[] pitchArray = new int[3];
+
+        pitchArray[0] = rootPitch;
+        pitchArray[1] = rootPitch + 3;
+        pitchArray[2] = rootPitch + 7;
+
+        CPhrase chord = new CPhrase();
+        chord.addChord(pitchArray, Durations.QUARTER_NOTE);
+
+        return chord;
+    }
+
+    private CPhrase diminishedChord(int rootPitch) {
+        int[] pitchArray = new int[3];
+
+        pitchArray[0] = rootPitch;
+        pitchArray[1] = rootPitch + 3;
+        pitchArray[2] = rootPitch + 6;
+
+        CPhrase chord = new CPhrase();
+        chord.addChord(pitchArray, Durations.QUARTER_NOTE);
+
+        return chord;
+    }
+
+    private CPhrase dominantChord(int rootPitch) {
+        int[] pitchArray = new int[4];
+
+        pitchArray[0] = rootPitch;
+        pitchArray[1] = rootPitch + 4;
+        pitchArray[2] = rootPitch + 7;
+        pitchArray[3] = rootPitch + 10;
+
+        CPhrase chord = new CPhrase();
+        chord.addChord(pitchArray, Durations.QUARTER_NOTE);
+
+        return chord;
     }
 }

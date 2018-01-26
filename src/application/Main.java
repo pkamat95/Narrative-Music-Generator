@@ -15,8 +15,10 @@ public class Main extends Application {
         primaryStage.setScene(new Scene(root, 300, 275));
         primaryStage.show();
 
-        ChordGenerator cg = new ChordGenerator();
-        cg.generateChord();
+        ChordTransitionMatrix matrix = new ChordTransitionMatrix();
+        ChordSelector chordSelector = new ChordSelector();
+        int c = chordSelector.selectChord(matrix.getRow(0));
+        System.out.println(c);
     }
 
 
