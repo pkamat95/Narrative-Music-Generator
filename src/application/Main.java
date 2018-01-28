@@ -15,10 +15,15 @@ public class Main extends Application {
         primaryStage.setScene(new Scene(root, 300, 275));
         primaryStage.show();
 
-        ChordTransitionMatrix matrix = new ChordTransitionMatrix();
-        ChordSelector chordSelector = new ChordSelector();
-        int c = chordSelector.selectChord(matrix.getRow(0));
-        System.out.println(c);
+        TransitionMatrixGenerator transitionMatrixGenerator = new TransitionMatrixGenerator(0.5, 1, 0.25,
+                0.25, 1, 1, 0.5);
+
+        transitionMatrixGenerator.generateRow(14);
+        double[] row = transitionMatrixGenerator.getTransitionMatrix().getRow(14);
+        for(int i = 0; i < row.length; i++) {
+            System.out.print(row[i] + " ");
+        }
+        System.out.print("\n");
     }
 
 

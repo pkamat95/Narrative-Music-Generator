@@ -13,6 +13,10 @@ public class ChordTransitionMatrix {
         matrix = new double[numOfChords][numOfChords];
 
         // initialise every value in matrix to 1
+        initialise();
+    }
+
+    public void initialise() {
         int i;
         for (i = 0; i < matrix.length; i++) {
             Arrays.fill(matrix[i], 1);
@@ -21,6 +25,9 @@ public class ChordTransitionMatrix {
 
     public double[] getRow(int index) {
         return matrix[index];
-        // need error checking here to see if index is out of bounds
+    }
+
+    public void setRow(double[] row, int index) {
+        matrix[index] = row;
     }
 }
