@@ -5,6 +5,13 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import jm.music.data.CPhrase;
+import jm.music.data.Note;
+import jm.music.data.Phrase;
+
+import java.util.Vector;
+
+import static jm.constants.Pitches.*;
 
 public class Main extends Application {
 
@@ -25,7 +32,6 @@ public class Main extends Application {
         }
         System.out.print("\n");
     }
-
 
     public static void main(String[] args) {
         launch(args);

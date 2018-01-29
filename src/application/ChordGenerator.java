@@ -8,7 +8,7 @@ import jm.music.data.CPhrase;
  */
 public class ChordGenerator {
 
-    private CPhrase majorChord(int rootPitch) {
+    public CPhrase majorChord(int rootPitch) {
         int[] pitchArray = new int[3];
 
         pitchArray[0] = rootPitch;
@@ -21,7 +21,7 @@ public class ChordGenerator {
         return chord;
     }
 
-    private CPhrase minorChord(int rootPitch) {
+    public CPhrase minorChord(int rootPitch) {
         int[] pitchArray = new int[3];
 
         pitchArray[0] = rootPitch;
@@ -34,7 +34,7 @@ public class ChordGenerator {
         return chord;
     }
 
-    private CPhrase diminishedChord(int rootPitch) {
+    public CPhrase diminishedChord(int rootPitch) {
         int[] pitchArray = new int[3];
 
         pitchArray[0] = rootPitch;
@@ -47,7 +47,7 @@ public class ChordGenerator {
         return chord;
     }
 
-    private CPhrase dominantChord(int rootPitch) {
+    public CPhrase dominantChord(int rootPitch) {
         int[] pitchArray = new int[4];
 
         pitchArray[0] = rootPitch;

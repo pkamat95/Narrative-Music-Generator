@@ -16,7 +16,7 @@ public class ChordTransitionMatrix {
         initialise();
     }
 
-    public void initialise() {
+    private void initialise() {
         int i;
         for (i = 0; i < matrix.length; i++) {
             Arrays.fill(matrix[i], 1);
