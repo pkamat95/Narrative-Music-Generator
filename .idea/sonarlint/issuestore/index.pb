@@ -15,3 +15,11 @@ R
 "src/application/ChordSelector.java,6/4/643f78492c15ff3d6d6a0e6dc67e8102f961854d
 I
 src/application/Main.java,8/d/8dd39b27bbecf58d30bde4cb59516e5bb7832dd9
+]
+-src/tests/application/MusicGeneratorTest.java,f/5/f55aff1ad6bf639bb2f3af88e7464ea214bee09b
+X
+(src/application/ValenceArousalModel.java,a/2/a2ea0a08b982576aeb26b4653057c5a6350a4ff1
+^
+.src/application/TransitionMatrixGenerator.java,4/d/4d7f6f0bc70d1edf73545fc0e4ec7c81596c9094
+S
+#src/application/MusicGenerator.java,6/d/6d2148dfca6af863356b7056247e4559c43db774

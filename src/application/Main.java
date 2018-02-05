@@ -5,12 +5,11 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import jm.music.data.CPhrase;
-import jm.music.data.Note;
-import jm.music.data.Phrase;
+import jm.music.data.*;
+import jm.util.Play;
+import jm.util.View;
 
-import java.util.Vector;
-
+import static application.Consts.*;
 import static jm.constants.Pitches.*;
 
 public class Main extends Application {
@@ -22,15 +21,39 @@ public class Main extends Application {
         primaryStage.setScene(new Scene(root, 300, 275));
         primaryStage.show();
 
-        TransitionMatrixGenerator transitionMatrixGenerator = new TransitionMatrixGenerator(0.5, 1, 0.25,
-                0.25, 1, 1, 0.5);
+        int key = C4;
+        ValenceArousalModel model = new ValenceArousalModel(1, 0);
+        double[] parameters = model.generateParameters();
 
-        transitionMatrixGenerator.generateRow(14);
-        double[] row = transitionMatrixGenerator.getTransitionMatrix().getRow(14);
-        for(int i = 0; i < row.length; i++) {
-            System.out.print(row[i] + " ");
+        System.out.print(parameters[MAJOR_CHORDS] + " " + parameters[MINOR_CHORDS] + " " + parameters[DIMINISHED_CHORDS] + " " +
+                parameters[DOMINANT_CHORDS] + " " + parameters[TONALITY] + " " + parameters[MODE] + " " + parameters[DIATONIC] +
+                " " + parameters[PITCH] + " " + parameters[TEMPO] + " " + parameters[VOLUME] + " " + parameters[VELOCITY]
+        );
+
+        TransitionMatrixGenerator transitionMatrixGenerator = new TransitionMatrixGenerator(parameters[MAJOR_CHORDS], parameters[MINOR_CHORDS],
+                parameters[DIMINISHED_CHORDS], parameters[DOMINANT_CHORDS], parameters[TONALITY], parameters[MODE], parameters[DIATONIC]);
+        MusicGenerator musicGenerator = new MusicGenerator(key, parameters[PITCH]);
+        int currentChord = 0;
+
+        for (int i = 0; i < 4; i++) {
+            double[] row = transitionMatrixGenerator.generateRow(currentChord);
+            /*
+            for (int j = 0; j < row.length; j++) {
+                System.out.print(row[j] + " ");
+            }
+            System.out.print("\n");
+            */
+
+           currentChord = musicGenerator.addToParts(row);
         }
-        System.out.print("\n");
+
+        Score score = new Score();
+        score.addPart(musicGenerator.getChordsPart());
+        score.addPart(musicGenerator.getLeadPart());
+        score.addPart(musicGenerator.getBassPart());
+        score.setTempo(parameters[TEMPO]);
+        Play.midi(score);
+
     }
 
     public static void main(String[] args) {

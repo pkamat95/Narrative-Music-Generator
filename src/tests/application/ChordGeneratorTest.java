@@ -20,7 +20,7 @@ public class ChordGeneratorTest {
 
     @Test
     public void majorChordShouldContainCorrectNotes() {
-        CPhrase chord = chordGenerator.majorChord(C3);
+        int[] chordNotes = chordGenerator.majorChord(C3);
 
         Note c = new Note();
         c.setPitch(C3);
@@ -29,15 +29,15 @@ public class ChordGeneratorTest {
         Note g = new Note();
         c.setPitch(G3);
 
-        assertEquals(true, chord.hasNote(c));
-        assertEquals(true, chord.hasNote(e));
-        assertEquals(true, chord.hasNote(g));
-        assertEquals(3, chord.getPhraseList().size());
+        assertEquals(C3, chordNotes[0]);
+        assertEquals(E3, chordNotes[1]);
+        assertEquals(G3, chordNotes[2]);
+        assertEquals(3, chordNotes.length);
     }
 
     @Test
     public void minorChordShouldContainCorrectNotes() {
-        CPhrase chord = chordGenerator.minorChord(C3);
+        int[] chordNotes = chordGenerator.minorChord(C3);
 
         Note c = new Note();
         c.setPitch(C3);
@@ -46,15 +46,15 @@ public class ChordGeneratorTest {
         Note g = new Note();
         c.setPitch(G3);
 
-        assertEquals(true, chord.hasNote(c));
-        assertEquals(true, chord.hasNote(eF));
-        assertEquals(true, chord.hasNote(g));
-        assertEquals(3, chord.getPhraseList().size());
+        assertEquals(C3, chordNotes[0]);
+        assertEquals(EF3, chordNotes[1]);
+        assertEquals(G3, chordNotes[2]);
+        assertEquals(3, chordNotes.length);
     }
 
     @Test
     public void diminishedChordShouldContainCorrectNotes() {
-        CPhrase chord = chordGenerator.diminishedChord(C3);
+        int[] chordNotes = chordGenerator.diminishedChord(C3);
 
         Note c = new Note();
         c.setPitch(C3);
@@ -63,15 +63,15 @@ public class ChordGeneratorTest {
         Note gF = new Note();
         c.setPitch(GF3);
 
-        assertEquals(true, chord.hasNote(c));
-        assertEquals(true, chord.hasNote(eF));
-        assertEquals(true, chord.hasNote(gF));
-        assertEquals(3, chord.getPhraseList().size());
+        assertEquals(C3, chordNotes[0]);
+        assertEquals(EF3, chordNotes[1]);
+        assertEquals(GF3, chordNotes[2]);
+        assertEquals(3, chordNotes.length);
     }
 
     @Test
     public void dominantChordShouldContainCorrectNotes() {
-        CPhrase chord = chordGenerator.dominantChord(C3);
+        int[] chordNotes = chordGenerator.dominantChord(C3);
 
         Note c = new Note();
         c.setPitch(C3);
@@ -82,10 +82,10 @@ public class ChordGeneratorTest {
         Note bF = new Note();
         c.setPitch(BF4);
 
-        assertEquals(true, chord.hasNote(c));
-        assertEquals(true, chord.hasNote(e));
-        assertEquals(true, chord.hasNote(g));
-        assertEquals(true, chord.hasNote(bF));
-        assertEquals(4, chord.getPhraseList().size());
+        assertEquals(C3, chordNotes[0]);
+        assertEquals(E3, chordNotes[1]);
+        assertEquals(G3, chordNotes[2]);
+        assertEquals(BF3, chordNotes[3]);
+        assertEquals(4, chordNotes.length);
     }
 }

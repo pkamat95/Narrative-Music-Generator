@@ -8,46 +8,37 @@ import jm.music.data.CPhrase;
  */
 public class ChordGenerator {
 
-    public CPhrase majorChord(int rootPitch) {
+    public int[] majorChord(int rootPitch) {
         int[] pitchArray = new int[3];
 
         pitchArray[0] = rootPitch;
         pitchArray[1] = rootPitch + 4;
         pitchArray[2] = rootPitch + 7;
 
-        CPhrase chord = new CPhrase();
-        chord.addChord(pitchArray, Durations.QUARTER_NOTE);
-
-        return chord;
+        return pitchArray;
     }
 
-    public CPhrase minorChord(int rootPitch) {
+    public int[] minorChord(int rootPitch) {
         int[] pitchArray = new int[3];
 
         pitchArray[0] = rootPitch;
         pitchArray[1] = rootPitch + 3;
         pitchArray[2] = rootPitch + 7;
 
-        CPhrase chord = new CPhrase();
-        chord.addChord(pitchArray, Durations.QUARTER_NOTE);
-
-        return chord;
+        return pitchArray;
     }
 
-    public CPhrase diminishedChord(int rootPitch) {
+    public int[] diminishedChord(int rootPitch) {
         int[] pitchArray = new int[3];
 
         pitchArray[0] = rootPitch;
         pitchArray[1] = rootPitch + 3;
         pitchArray[2] = rootPitch + 6;
 
-        CPhrase chord = new CPhrase();
-        chord.addChord(pitchArray, Durations.QUARTER_NOTE);
-
-        return chord;
+        return pitchArray;
     }
 
-    public CPhrase dominantChord(int rootPitch) {
+    public int[] dominantChord(int rootPitch) {
         int[] pitchArray = new int[4];
 
         pitchArray[0] = rootPitch;
@@ -55,9 +46,6 @@ public class ChordGenerator {
         pitchArray[2] = rootPitch + 7;
         pitchArray[3] = rootPitch + 10;
 
-        CPhrase chord = new CPhrase();
-        chord.addChord(pitchArray, Durations.QUARTER_NOTE);
-
-        return chord;
+        return pitchArray;
     }
 }

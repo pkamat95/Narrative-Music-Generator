@@ -1,53 +1,53 @@
 
-Tsquid:S1118":Add a private constructor to hide the implicit public one.(œ¼Ø›ûÿÿÿÿ
-nsquid:S1845"YRename field "i" to prevent any misunderstanding/clash with field "I" defined on line 10.(´©Ëü
-usquid:S1845"[Rename field "iS" to prevent any misunderstanding/clash with field "IS" defined on line 11.(”Ã“ ûÿÿÿÿ
-rsquid:S1845"]Rename field "iiF" to prevent any misunderstanding/clash with field "IIF" defined on line 12.(ÑµºÒ
-psquid:S1845"[Rename field "ii" to prevent any misunderstanding/clash with field "II" defined on line 13.(™ÁÒ
-wsquid:S1845"]Rename field "iiS" to prevent any misunderstanding/clash with field "IIS" defined on line 14.(‰Üàÿÿÿÿÿ
-tsquid:S1845"_Rename field "iiiF" to prevent any misunderstanding/clash with field "IIIF" defined on line 15.(‘ìâ 
-qsquid:S1845"]Rename field "iii" to prevent any misunderstanding/clash with field "III" defined on line 16.(¤™”L
-usquid:S1845"[Rename field "iv" to prevent any misunderstanding/clash with field "IV" defined on line 17.(Ô Ãøÿÿÿÿ
-wsquid:S1845"]Rename field "ivS" to prevent any misunderstanding/clash with field "IVS" defined on line 18.(º¤•ëûÿÿÿÿ
-usquid:S1845"[Rename field "vF" to prevent any misunderstanding/clash with field "VF" defined on line 19.(ˆÂÙıÿÿÿÿ
-nsquid:S1845"YRename field "v" to prevent any misunderstanding/clash with field "V" defined on line 20.(Öã–—
-osquid:S1845"[Rename field "vS" to prevent any misunderstanding/clash with field "VS" defined on line 21.(®º+
-rsquid:S1845"]Rename field "viF" to prevent any misunderstanding/clash with field "VIF" defined on line 22.(íÌ©á
-usquid:S1845"[Rename field "vi" to prevent any misunderstanding/clash with field "VI" defined on line 23.(îÀ…ãıÿÿÿÿ
-wsquid:S1845"]Rename field "viS" to prevent any misunderstanding/clash with field "VIS" defined on line 24.(¯‚¬ùÿÿÿÿ
-tsquid:S1845"_Rename field "viiF" to prevent any misunderstanding/clash with field "VIIF" defined on line 25.(§äÓ
-wsquid:S1845"]Rename field "vii" to prevent any misunderstanding/clash with field "VII" defined on line 26.(†•ÕÌüÿÿÿÿ
-psquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(´©Ëü
-usquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(”Ã“ ûÿÿÿÿ
-psquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ÑµºÒ
-psquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(™ÁÒ
-usquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(‰Üàÿÿÿÿÿ
-psquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(‘ìâ 
-osquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(¤™”L
-usquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(Ô Ãøÿÿÿÿ
-usquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(º¤•ëûÿÿÿÿ
-usquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ˆÂÙıÿÿÿÿ
-psquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(Öã–—
-osquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(®º+
-psquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(íÌ©á
-usquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(îÀ…ãıÿÿÿÿ
-usquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(¯‚¬ùÿÿÿÿ
-psquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(§äÓ
-usquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(†•ÕÌüÿÿÿÿ
-usquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(Áƒ‚ƒüÿÿÿÿ
-osquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(æà„
-usquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ïÌúøÿÿÿÿ
-osquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(¤»ö\
-psquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(í’ªĞ
-psquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(î¢çŠ
-psquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(¬…Ãó
-psquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(şÍ±˜
-usquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ÛÃ’ÿÿÿÿÿ
 usquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(³ıÎ»ıÿÿÿÿ
+usquid:S1845"[Rename field "iS" to prevent any misunderstanding/clash with field "IS" defined on line 11.(”Ã“ ûÿÿÿÿ
+usquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(†•ÕÌüÿÿÿÿ
+psquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(í’ªĞ
+nsquid:S1845"YRename field "v" to prevent any misunderstanding/clash with field "V" defined on line 20.(Öã–—
 psquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(»ÏÚ³
-usquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ç­¿ûıÿÿÿÿ
-usquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(Êèˆ˜şÿÿÿÿ
+usquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ˆÂÙıÿÿÿÿ
+wsquid:S1845"]Rename field "viS" to prevent any misunderstanding/clash with field "VIS" defined on line 24.(¯‚¬ùÿÿÿÿ
+rsquid:S1845"]Rename field "iiF" to prevent any misunderstanding/clash with field "IIF" defined on line 12.(ÑµºÒ
+psquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(¬…Ãó
+psquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(¥Ÿ¨„
 psquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(é—éé
+psquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(î¢çŠ
+osquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(¤™”L
+usquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(º¤•ëûÿÿÿÿ
+tsquid:S1845"_Rename field "iiiF" to prevent any misunderstanding/clash with field "IIIF" defined on line 15.(‘ìâ 
+tsquid:S1845"_Rename field "viiF" to prevent any misunderstanding/clash with field "VIIF" defined on line 25.(§äÓ
+usquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(Ô Ãøÿÿÿÿ
+usquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ÛÃ’ÿÿÿÿÿ
+psquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ÑµºÒ
 psquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ìá‰
 psquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(‘×Ç„
-psquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(¥Ÿ¨„
+osquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(æà„
+psquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(´©Ëü
+psquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(íÌ©á
+usquid:S1845"[Rename field "iv" to prevent any misunderstanding/clash with field "IV" defined on line 17.(Ô Ãøÿÿÿÿ
+usquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(îÀ…ãıÿÿÿÿ
+rsquid:S1845"]Rename field "viF" to prevent any misunderstanding/clash with field "VIF" defined on line 22.(íÌ©á
+qsquid:S1845"]Rename field "iii" to prevent any misunderstanding/clash with field "III" defined on line 16.(¤™”L
+usquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(¯‚¬ùÿÿÿÿ
+wsquid:S1845"]Rename field "iiS" to prevent any misunderstanding/clash with field "IIS" defined on line 14.(‰Üàÿÿÿÿÿ
+nsquid:S1845"YRename field "i" to prevent any misunderstanding/clash with field "I" defined on line 10.(´©Ëü
+psquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(§äÓ
+usquid:S1845"[Rename field "vF" to prevent any misunderstanding/clash with field "VF" defined on line 19.(ˆÂÙıÿÿÿÿ
+psquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(‘ìâ 
+usquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(Áƒ‚ƒüÿÿÿÿ
+psquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(şÍ±˜
+usquid:S1845"[Rename field "vi" to prevent any misunderstanding/clash with field "VI" defined on line 23.(îÀ…ãıÿÿÿÿ
+usquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(‰Üàÿÿÿÿÿ
+psquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(Öã–—
+usquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(”Ã“ ûÿÿÿÿ
+psquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(™ÁÒ
+wsquid:S1845"]Rename field "ivS" to prevent any misunderstanding/clash with field "IVS" defined on line 18.(º¤•ëûÿÿÿÿ
+Tsquid:S1118":Add a private constructor to hide the implicit public one.(œ¼Ø›ûÿÿÿÿ
+usquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ç­¿ûıÿÿÿÿ
+usquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ïÌúøÿÿÿÿ
+osquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(¤»ö\
+usquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(Êèˆ˜şÿÿÿÿ
+osquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(®º+
+psquid:S1845"[Rename field "ii" to prevent any misunderstanding/clash with field "II" defined on line 13.(™ÁÒ
+wsquid:S1845"]Rename field "vii" to prevent any misunderstanding/clash with field "VII" defined on line 26.(†•ÕÌüÿÿÿÿ
+osquid:S1845"[Rename field "vS" to prevent any misunderstanding/clash with field "VS" defined on line 21.(®º+

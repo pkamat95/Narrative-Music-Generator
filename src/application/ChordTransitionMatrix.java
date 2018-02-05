@@ -24,7 +24,7 @@ public class ChordTransitionMatrix {
     }
 
     public double[] getRow(int index) {
-        return matrix[index];
+        return matrix[index].clone();
     }
 
     public void setRow(double[] row, int index) {

@@ -81,4 +81,17 @@ public final class Consts {
     public static final int VI7S = 46;
     public static final int VII7F = 46;
     public static final int VII7 = 47;
+
+    // transition matrix filter parameters
+    public static final int MAJOR_CHORDS = 0;
+    public static final int MINOR_CHORDS = 1;
+    public static final int DIMINISHED_CHORDS = 2;
+    public static final int DOMINANT_CHORDS = 3;
+    public static final int TONALITY = 4;
+    public static final int MODE = 5;
+    public static final int DIATONIC = 6;
+    public static final int PITCH = 7;
+    public static final int TEMPO = 8;
+    public static final int VOLUME = 9;
+    public static final int VELOCITY = 10;
 }

@@ -1,5 +1,3 @@
 
-Rsquid:UnusedPrivateMethod"/Remove this unused private "majorChord" method.(¹åù
-Wsquid:UnusedPrivateMethod"/Remove this unused private "minorChord" method.(îºœ¯ıÿÿÿÿ
-Wsquid:UnusedPrivateMethod"4Remove this unused private "diminishedChord" method.(‹Îº¹
-Usquid:UnusedPrivateMethod"2Remove this unused private "dominantChord" method.(«ÒØ¶
+asquid:UselessImportCheck"3Remove this unused import 'jm.constants.Durations'.(²—Ø§ÿÿÿÿÿ8ÈÄø¶–,
+[squid:UselessImportCheck"2Remove this unused import 'jm.music.data.CPhrase'.(ŠòèÁ8ÈÄø¶–,
