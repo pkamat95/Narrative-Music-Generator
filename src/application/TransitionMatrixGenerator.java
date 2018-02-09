@@ -15,22 +15,11 @@ public class TransitionMatrixGenerator {
     public TransitionMatrixGenerator (double majorChords, double minorChords, double diminishedChords,
                                      double dominantChords, double tonality, double mode, double diatonic) {
         transitionMatrix = new ChordTransitionMatrix();
-
-        rowsComplete = new boolean[transitionMatrix.getRow(0).length];
-        Arrays.fill(rowsComplete, false);
-
         chordsFilter = new ChordsFilter();
-        chordsFilter.getMajorChordsFilter().setFilterValue(majorChords);
-        chordsFilter.getMinorChordsFilter().setFilterValue(minorChords);
-        chordsFilter.getDiminishedChordsFilter().setFilterValue(diminishedChords);
-        chordsFilter.getDominantChordsFilter().setFilterValue(dominantChords);
-
         tonalityFilter = new TonalityFilter();
-        tonalityFilter.setFilterValue(tonality);
-        tonalityFilter.setMode(mode);
-
         diatonicFilter = new DiatonicFilter();
-        diatonicFilter.setFilterValue(diatonic);
+
+        setFilterValues(majorChords, minorChords, diminishedChords, dominantChords, tonality, mode, diatonic);
     }
 
     public double[] generateRow(int rowIndex) {
@@ -54,5 +43,21 @@ public class TransitionMatrixGenerator {
 
     public ChordTransitionMatrix getTransitionMatrix() {
         return transitionMatrix;
+    }
+
+    private void setFilterValues(double majorChords, double minorChords, double diminishedChords,
+                               double dominantChords, double tonality, double mode, double diatonic) {
+        rowsComplete = new boolean[transitionMatrix.getRow(0).length];
+        Arrays.fill(rowsComplete, false);
+
+        chordsFilter.getMajorChordsFilter().setFilterValue(majorChords);
+        chordsFilter.getMinorChordsFilter().setFilterValue(minorChords);
+        chordsFilter.getDiminishedChordsFilter().setFilterValue(diminishedChords);
+        chordsFilter.getDominantChordsFilter().setFilterValue(dominantChords);
+
+        tonalityFilter.setFilterValue(tonality);
+        tonalityFilter.setMode(mode);
+
+        diatonicFilter.setFilterValue(diatonic);
     }
 }

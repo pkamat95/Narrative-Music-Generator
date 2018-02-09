@@ -12,13 +12,16 @@ import jm.music.data.Phrase;
  */
 public class MusicGenerator {
     private int key;
+    private double tempo;
+    private double startTime = 0;
+    private int DURATIONOFPHRASE = 4; // each will always be 4 beats long
     private Part chordsPart;
     private Part leadPart;
     private Part bassPart;
     private ChordSelector chordSelector;
     private ChordGenerator chordGenerator;
 
-    public MusicGenerator(int key, double pitch) {
+    public MusicGenerator(int key, double pitch, double tempo) {
         // adjust key based on pitch
         if (pitch < 1) {
             key -= 12;
@@ -28,6 +31,7 @@ public class MusicGenerator {
         }
 
         this.key = key;
+        this.tempo = tempo;
         chordsPart = new Part("Guitar", ProgramChanges.PIANO, 0);
         leadPart = new Part("Piano", ProgramChanges.FLUTE, 1);
         bassPart = new Part("Bass", ProgramChanges.BASS, 2);
@@ -46,6 +50,8 @@ public class MusicGenerator {
         leadPart.addPhrase(generateLead(chordNotes));
         bassPart.addPhrase(generateBass(rootNote));
 
+        updateStartTime(); // adjusts start time of phrases added to account for difference in current tempo and overall score tempo
+
         return chordIndex; // return current chord index for transition matrix
     }
 
@@ -60,8 +66,9 @@ public class MusicGenerator {
     }
 
     private CPhrase generateChord(int[] chordNotes) {
-        CPhrase chord = new CPhrase();
+        CPhrase chord = new CPhrase(startTime);
         chord.addChord(chordNotes, Durations.WHOLE_NOTE);
+        chord.setTempo(tempo);
         return chord;
     }
 
@@ -79,7 +86,10 @@ public class MusicGenerator {
         note3.setDuration(Durations.QUARTER_NOTE);
 
         Note[] notes = {note1, note2, note3, note2};
-        return new Phrase(notes);
+        Phrase lead = new Phrase(notes);
+        lead.setStartTime(startTime);
+        lead.setTempo(tempo);
+        return lead;
     }
 
     private Phrase generateBass(int rootNote) {
@@ -87,7 +97,14 @@ public class MusicGenerator {
         bassNote.setPitch(rootNote - 12);
         bassNote.setDuration(Durations.QUARTER_NOTE);
         Note[] bassNotes = {bassNote, bassNote, bassNote, bassNote};
-        return new Phrase(bassNotes);
+        Phrase bass = new Phrase(bassNotes);
+        bass.setStartTime(startTime);
+        bass.setTempo(tempo);
+        return bass;
+    }
+
+    private void updateStartTime() {
+        startTime += DURATIONOFPHRASE * (60 / tempo);
     }
 
     public Part getChordsPart() {

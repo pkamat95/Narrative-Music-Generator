@@ -5,7 +5,9 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import jm.constants.Durations;
 import jm.music.data.*;
+import jm.music.tools.Mod;
 import jm.util.Play;
 import jm.util.View;
 
@@ -21,37 +23,28 @@ public class Main extends Application {
         primaryStage.setScene(new Scene(root, 300, 275));
         primaryStage.show();
 
+        // create list of sections
+        Section[] sections = new Section[3];
+        // set key
         int key = C4;
-        ValenceArousalModel model = new ValenceArousalModel(1, 0);
-        double[] parameters = model.generateParameters();
+        // create model with emotion inputs
+        ValenceArousalModel model = new ValenceArousalModel(0, 1);
 
-        System.out.print(parameters[MAJOR_CHORDS] + " " + parameters[MINOR_CHORDS] + " " + parameters[DIMINISHED_CHORDS] + " " +
-                parameters[DOMINANT_CHORDS] + " " + parameters[TONALITY] + " " + parameters[MODE] + " " + parameters[DIATONIC] +
-                " " + parameters[PITCH] + " " + parameters[TEMPO] + " " + parameters[VOLUME] + " " + parameters[VELOCITY]
-        );
+        sections[0] = new Section(model.generateParameters(), key, 3, true, false, 1, 1);
 
-        TransitionMatrixGenerator transitionMatrixGenerator = new TransitionMatrixGenerator(parameters[MAJOR_CHORDS], parameters[MINOR_CHORDS],
-                parameters[DIMINISHED_CHORDS], parameters[DOMINANT_CHORDS], parameters[TONALITY], parameters[MODE], parameters[DIATONIC]);
-        MusicGenerator musicGenerator = new MusicGenerator(key, parameters[PITCH]);
-        int currentChord = 0;
+        model.setValence(0.5);
+        model.setArousal(0.5);
+        sections[1] = new Section(model.generateParameters(), key, 3,false, false, 1, 1);
 
-        for (int i = 0; i < 4; i++) {
-            double[] row = transitionMatrixGenerator.generateRow(currentChord);
-            /*
-            for (int j = 0; j < row.length; j++) {
-                System.out.print(row[j] + " ");
-            }
-            System.out.print("\n");
-            */
+        model.setValence(1);
+        model.setArousal(0);
+        sections[2] = new Section(model.generateParameters(), key, 2,false, true, 1, 1);
 
-           currentChord = musicGenerator.addToParts(row);
-        }
+        Composition composition = new Composition(sections);
+        composition.generateComposition();
 
-        Score score = new Score();
-        score.addPart(musicGenerator.getChordsPart());
-        score.addPart(musicGenerator.getLeadPart());
-        score.addPart(musicGenerator.getBassPart());
-        score.setTempo(parameters[TEMPO]);
+        Score score = composition.getScore();
+
         Play.midi(score);
 
     }
