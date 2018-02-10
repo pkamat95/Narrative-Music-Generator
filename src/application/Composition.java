@@ -54,13 +54,13 @@ public class Composition {
         int j, k;
         for (j = startPoint ; j < (startPoint + sectionLength); j++) {
 
-            // adjust phrase startTimes for guitar part
+            // adjust phrase startTimes for chords part
             for (k = 0; k < NUMBEROFPARTS; k++) {
                 phrase = parts[0].getPhrase((j * NUMBEROFPARTS) + k);
                 phrase.setStartTime(phrase.getStartTime() - timeAdjustment);
             }
 
-            // adjust phrase startTimes for piano part
+            // adjust phrase startTimes for lead part
             phrase = parts[1].getPhrase(j);
             phrase.setStartTime(phrase.getStartTime() - timeAdjustment);
 

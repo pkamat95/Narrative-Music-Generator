@@ -13,6 +13,7 @@ import jm.music.data.Phrase;
 public class MusicGenerator {
     private int key;
     private double tempo;
+    private int dynamic;
     private double startTime = 0;
     private int DURATIONOFPHRASE = 4; // each will always be 4 beats long
     private Part chordsPart;
@@ -21,7 +22,7 @@ public class MusicGenerator {
     private ChordSelector chordSelector;
     private ChordGenerator chordGenerator;
 
-    public MusicGenerator(int key, double pitch, double tempo) {
+    public MusicGenerator(int key, double pitch, double tempo, double velocity) {
         // adjust key based on pitch
         if (pitch < 1) {
             key -= 12;
@@ -32,8 +33,9 @@ public class MusicGenerator {
 
         this.key = key;
         this.tempo = tempo;
-        chordsPart = new Part("Guitar", ProgramChanges.PIANO, 0);
-        leadPart = new Part("Piano", ProgramChanges.FLUTE, 1);
+        this.dynamic = calculateDynamic(velocity);
+        chordsPart = new Part("Piano", ProgramChanges.PIANO, 0);
+        leadPart = new Part("Guitar", ProgramChanges.GUITAR, 1);
         bassPart = new Part("Bass", ProgramChanges.BASS, 2);
         chordSelector = new ChordSelector();
         chordGenerator = new ChordGenerator();
@@ -67,7 +69,7 @@ public class MusicGenerator {
 
     private CPhrase generateChord(int[] chordNotes) {
         CPhrase chord = new CPhrase(startTime);
-        chord.addChord(chordNotes, Durations.WHOLE_NOTE);
+        chord.addChord(chordNotes, Durations.WHOLE_NOTE, dynamic);
         chord.setTempo(tempo);
         return chord;
     }
@@ -76,14 +78,17 @@ public class MusicGenerator {
         Note note1 = new Note();
         note1.setPitch(chordNotes[0]);
         note1.setDuration(Durations.QUARTER_NOTE);
+        note1.setDynamic(dynamic);
 
         Note note2 = new Note();
         note2.setPitch(chordNotes[1]);
         note2.setDuration(Durations.QUARTER_NOTE);
+        note2.setDynamic(dynamic);
 
         Note note3 = new Note();
         note3.setPitch(chordNotes[2]);
         note3.setDuration(Durations.QUARTER_NOTE);
+        note3.setDynamic(dynamic);
 
         Note[] notes = {note1, note2, note3, note2};
         Phrase lead = new Phrase(notes);
@@ -96,6 +101,8 @@ public class MusicGenerator {
         Note bassNote = new Note();
         bassNote.setPitch(rootNote - 12);
         bassNote.setDuration(Durations.QUARTER_NOTE);
+        bassNote.setDynamic(dynamic);
+
         Note[] bassNotes = {bassNote, bassNote, bassNote, bassNote};
         Phrase bass = new Phrase(bassNotes);
         bass.setStartTime(startTime);
@@ -105,6 +112,14 @@ public class MusicGenerator {
 
     private void updateStartTime() {
         startTime += DURATIONOFPHRASE * (60 / tempo);
+    }
+
+    private int calculateDynamic(double velocity) {
+        int minDynamic = 40;
+        int maxDynamic = 70;
+
+        int dynamic = (int) (minDynamic + ((maxDynamic - minDynamic) * velocity));
+        return dynamic;
     }
 
     public Part getChordsPart() {

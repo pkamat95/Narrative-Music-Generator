@@ -43,7 +43,7 @@ public class Section {
     }
 
     public void generateSection() {
-        MusicGenerator musicGenerator = new MusicGenerator(key, parameters[PITCH], parameters[TEMPO]);
+        MusicGenerator musicGenerator = new MusicGenerator(key, parameters[PITCH], parameters[TEMPO], parameters[VELOCITY]);
 
         int currentChord = I; // could change this starting chord based on mode
 

@@ -30,7 +30,7 @@ public class ValenceArousalModel {
         // parameters controlled by arousal
         parameters[TEMPO] = 60 + (arousal * 60); // min 60, max 120 bpm
         parameters[VOLUME] = 0.7 + (arousal * 0.3);
-        parameters[VELOCITY] = 0.4 + (arousal * 0.6);
+        parameters[VELOCITY] = arousal;
 
         return parameters;
     }

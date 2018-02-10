@@ -7,11 +7,8 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import jm.constants.Durations;
 import jm.music.data.*;
-import jm.music.tools.Mod;
 import jm.util.Play;
-import jm.util.View;
 
-import static application.Consts.*;
 import static jm.constants.Pitches.*;
 
 public class Main extends Application {
@@ -30,7 +27,7 @@ public class Main extends Application {
         // create model with emotion inputs
         ValenceArousalModel model = new ValenceArousalModel(0, 1);
 
-        sections[0] = new Section(model.generateParameters(), key, 3, true, false, 1, 1);
+        sections[0] = new Section(model.generateParameters(), key, 2, true, false, 1, 1);
 
         model.setValence(0.5);
         model.setArousal(0.5);
@@ -46,7 +43,6 @@ public class Main extends Application {
         Score score = composition.getScore();
 
         Play.midi(score);
-
     }
 
     public static void main(String[] args) {
