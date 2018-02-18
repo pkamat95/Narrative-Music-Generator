@@ -42,10 +42,8 @@ public class Section {
                 parameters[DIMINISHED_CHORDS], parameters[DOMINANT_CHORDS], parameters[TONALITY], parameters[MODE], parameters[DIATONIC]);
     }
 
-    public void generateSection() {
+    public int generateSection(int currentChord) {
         MusicGenerator musicGenerator = new MusicGenerator(key, parameters[PITCH], parameters[TEMPO], parameters[VELOCITY]);
-
-        int currentChord = I; // could change this starting chord based on mode
 
         for (int i = 0; i < sectionLength; i++) {
             double[] row = transitionMatrixGenerator.generateRow(currentChord);
@@ -56,6 +54,8 @@ public class Section {
         score.addPart(musicGenerator.getChordsPart());
         score.addPart(musicGenerator.getLeadPart());
         score.addPart(musicGenerator.getBassPart());
+
+        return currentChord;
     }
 
     public Score getScore() {
@@ -68,5 +68,21 @@ public class Section {
 
     public double getTempo() {
         return parameters[TEMPO];
+    }
+
+    public int getStartTransitionLength() {
+        return startTransitionLength;
+    }
+
+    public int getEndTransitionLength() {
+        return endTransitionLength;
+    }
+
+    public int getKey() {
+        return key;
+    }
+
+    public double[] getParameters() {
+        return parameters.clone();
     }
 }

@@ -24,7 +24,6 @@ public class CompositionTest {
         Section[] sections = new Section[numberOfSections];
         ValenceArousalModel model = new ValenceArousalModel(0.5, 0.5);
         double[] parameters = model.generateParameters();
-        parameters[DIATONIC] = 1; // ensures no 7th chords which have an extra note are selected to test number of phrases in chords part
 
         int i;
         for (i = 0; i < numberOfSections; i++) {
@@ -44,10 +43,7 @@ public class CompositionTest {
     public void partsContainCorrectNumberOfPhrases() {
         Part[] parts = composition.getScore().getPartArray();
 
-        if (parts[0].size() != 18)
-            System.out.println(parts[0]);
-
-        assertEquals(numberOfSections * sectionLength * 3, parts[0].size());
+        assertEquals(numberOfSections * sectionLength * 4, parts[0].size());
         assertEquals(numberOfSections * sectionLength, parts[1].size()); // lead part
         assertEquals(numberOfSections * sectionLength, parts[2].size()); // bass part
     }

@@ -12,9 +12,12 @@ public class TransitionMatrixGenerator {
     private TonalityFilter tonalityFilter;
     private DiatonicFilter diatonicFilter;
 
+    public TransitionMatrixGenerator () {
+        this(0, 0, 0, 0, 0.5, 0.5, 0.5);
+    }
+
     public TransitionMatrixGenerator (double majorChords, double minorChords, double diminishedChords,
                                      double dominantChords, double tonality, double mode, double diatonic) {
-        transitionMatrix = new ChordTransitionMatrix();
         chordsFilter = new ChordsFilter();
         tonalityFilter = new TonalityFilter();
         diatonicFilter = new DiatonicFilter();
@@ -45,8 +48,11 @@ public class TransitionMatrixGenerator {
         return transitionMatrix;
     }
 
-    private void setFilterValues(double majorChords, double minorChords, double diminishedChords,
+    // used to reset the transitionmatrixgenerator
+    public void setFilterValues(double majorChords, double minorChords, double diminishedChords,
                                double dominantChords, double tonality, double mode, double diatonic) {
+        transitionMatrix = new ChordTransitionMatrix();
+
         rowsComplete = new boolean[transitionMatrix.getRow(0).length];
         Arrays.fill(rowsComplete, false);
 

@@ -41,7 +41,7 @@ public class ValenceArousalModelTest {
         assertEquals(0, parameters[PITCH], 0);
         assertEquals(60, parameters[TEMPO], 0);
         assertEquals(0.7, parameters[VOLUME], 0);
-        assertEquals(0.4, parameters[VELOCITY], 0);
+        assertEquals(0, parameters[VELOCITY], 0);
     }
 
     @Test
@@ -58,7 +58,7 @@ public class ValenceArousalModelTest {
         assertEquals(3, parameters[PITCH], 0);
         assertEquals(60, parameters[TEMPO], 0);
         assertEquals(0.7, parameters[VOLUME], 0);
-        assertEquals(0.4, parameters[VELOCITY], 0);
+        assertEquals(0, parameters[VELOCITY], 0);
     }
 
     @Test

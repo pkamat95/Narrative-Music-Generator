@@ -1,6 +1,5 @@
 package application;
 
-import jm.music.data.CPhrase;
 import jm.music.data.Note;
 import org.junit.Before;
 import org.junit.Test;
@@ -32,7 +31,8 @@ public class ChordGeneratorTest {
         assertEquals(C3, chordNotes[0]);
         assertEquals(E3, chordNotes[1]);
         assertEquals(G3, chordNotes[2]);
-        assertEquals(3, chordNotes.length);
+        assertEquals(0, chordNotes[3]);
+        assertEquals(4, chordNotes.length);
     }
 
     @Test
@@ -49,7 +49,8 @@ public class ChordGeneratorTest {
         assertEquals(C3, chordNotes[0]);
         assertEquals(EF3, chordNotes[1]);
         assertEquals(G3, chordNotes[2]);
-        assertEquals(3, chordNotes.length);
+        assertEquals(0, chordNotes[3]);
+        assertEquals(4, chordNotes.length);
     }
 
     @Test
@@ -66,7 +67,8 @@ public class ChordGeneratorTest {
         assertEquals(C3, chordNotes[0]);
         assertEquals(EF3, chordNotes[1]);
         assertEquals(GF3, chordNotes[2]);
-        assertEquals(3, chordNotes.length);
+        assertEquals(0, chordNotes[3]);
+        assertEquals(4, chordNotes.length);
     }
 
     @Test

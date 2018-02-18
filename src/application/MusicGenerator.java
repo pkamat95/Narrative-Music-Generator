@@ -7,6 +7,8 @@ import jm.music.data.Note;
 import jm.music.data.Part;
 import jm.music.data.Phrase;
 
+import static application.Consts.PHRASE_DURATION;
+
 /**
  * Created by praneilkamat on 30/01/2018.
  */
@@ -15,7 +17,6 @@ public class MusicGenerator {
     private double tempo;
     private int dynamic;
     private double startTime = 0;
-    private int DURATIONOFPHRASE = 4; // each will always be 4 beats long
     private Part chordsPart;
     private Part leadPart;
     private Part bassPart;
@@ -111,7 +112,7 @@ public class MusicGenerator {
     }
 
     private void updateStartTime() {
-        startTime += DURATIONOFPHRASE * (60 / tempo);
+        startTime += PHRASE_DURATION * (60 / tempo);
     }
 
     private int calculateDynamic(double velocity) {

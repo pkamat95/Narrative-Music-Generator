@@ -9,13 +9,17 @@ public class ValenceArousalModel {
     private double valence = 0.5;
     private double arousal = 0.5;
 
+    public ValenceArousalModel() {
+        this(0.5, 0.5);
+    }
+
     public ValenceArousalModel(double valence, double arousal) {
         setValence(valence);
         setArousal(arousal);
     }
 
     public double[] generateParameters() {
-        double[] parameters = new double[11];
+        double[] parameters = new double[NUMBER_OF_PARAMETERS];
 
         // parameters controlled by valence
         parameters[MAJOR_CHORDS] = valence;

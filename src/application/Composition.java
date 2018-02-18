@@ -5,15 +5,16 @@ import jm.music.data.Phrase;
 import jm.music.data.Score;
 import jm.music.tools.Mod;
 
+import static application.Consts.I;
+import static application.Consts.NUMBER_OF_NOTES_IN_CHORD;
+import static application.Consts.PHRASE_DURATION;
+
 /**
  * Created by praneilkamat on 09/02/2018.
  */
 public class Composition {
     private Section[] sections;
     private Score score;
-    private double timeAdjustment = 0;
-    private int DURATIONOFPHRASE = 4;
-    private int NUMBEROFPARTS = 3;
     private boolean isStart = true;
 
     public Composition(Section[] sections) {
@@ -25,22 +26,43 @@ public class Composition {
         score.empty();
         isStart = true;
 
-        int i, startPoint;
+        double timeAdjustment = 0;
+        int currentChord = I; // could change this starting chord based on mode
+        TransitionHelper transitionHelper = new TransitionHelper(sections[0].getKey());
+        Score transitionPart;
+        int transitionLength;
+
+        int i, j, startPoint;
         for (i = 0; i < sections.length; i++) {
 
-            sections[i].generateSection();
+            currentChord = sections[i].generateSection(currentChord);
             Mod.append(score, sections[i].getScore());
 
             // adjust the startTimes of all phrases in the current section based on the tempo from the previous section (to account for tempo)
             if (!isStart) {
                 startPoint = score.getPartArray()[1].getSize() - sections[i].getSectionLength();
-                adjustStartTimes(score.getPartArray(), startPoint, sections[i].getSectionLength());
+                adjustStartTimes(score.getPartArray(), startPoint, sections[i].getSectionLength(), timeAdjustment);
             }
 
-            // calculate startTimeAdjustment for next section
-            timeAdjustment = DURATIONOFPHRASE - (DURATIONOFPHRASE * (60/sections[i].getTempo()));
+            // calculate startTimeAdjustment for transition
+            timeAdjustment = PHRASE_DURATION - (PHRASE_DURATION * (60/sections[i].getTempo()));
 
-            // Add transition section to score here
+            // Add transition section to score
+            if (i != sections.length - 1) { // generate transition unless we're on the last section
+                transitionLength = sections[i].getEndTransitionLength() + sections[i+1].getStartTransitionLength();
+                for (j = 0; j < transitionLength; j++) {
+                    transitionHelper.interpolateParameters(sections[i].getParameters(), sections[i+1].getParameters(), j, transitionLength);
+
+                    startPoint = score.getPartArray()[1].getSize();
+                    currentChord = transitionHelper.generateTransitionPart(currentChord);
+                    Mod.append(score, transitionHelper.getTransitionPart());
+
+                    // need to adjust start times after each chord
+                    adjustStartTimes(score.getPartArray(), startPoint, 1, timeAdjustment);
+
+                    timeAdjustment = PHRASE_DURATION - (PHRASE_DURATION * (60/transitionHelper.getTempo()));
+                }
+            }
 
             if (isStart) {
                 isStart = false;
@@ -48,15 +70,17 @@ public class Composition {
         }
     }
 
-    private void adjustStartTimes(Part[] parts, int startPoint, int sectionLength) {
+    private void adjustStartTimes(Part[] parts, int startPoint, int sectionLength, double timeAdjustment) {
         Phrase phrase;
 
-        int j, k;
+        int j, k = startPoint* NUMBER_OF_NOTES_IN_CHORD;
+        boolean chordHasAnotherNote;
+
         for (j = startPoint ; j < (startPoint + sectionLength); j++) {
 
             // adjust phrase startTimes for chords part
-            for (k = 0; k < NUMBEROFPARTS; k++) {
-                phrase = parts[0].getPhrase((j * NUMBEROFPARTS) + k);
+            for (k = 0; k < NUMBER_OF_NOTES_IN_CHORD; k++) {
+                phrase = parts[0].getPhrase((j * NUMBER_OF_NOTES_IN_CHORD) + k);
                 phrase.setStartTime(phrase.getStartTime() - timeAdjustment);
             }
 
@@ -67,7 +91,6 @@ public class Composition {
             // adjust phrase startTimes for bass part
             phrase = parts[2].getPhrase(j);
             phrase.setStartTime(phrase.getStartTime() - timeAdjustment);
-
         }
     }
 

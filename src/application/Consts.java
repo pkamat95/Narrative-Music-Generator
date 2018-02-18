@@ -94,4 +94,9 @@ public final class Consts {
     public static final int TEMPO = 8;
     public static final int VOLUME = 9;
     public static final int VELOCITY = 10;
+
+    // other constants
+    public static final int NUMBER_OF_PARAMETERS = 11;
+    public static final int PHRASE_DURATION = 4;
+    public static final int NUMBER_OF_NOTES_IN_CHORD = 4;
 }
