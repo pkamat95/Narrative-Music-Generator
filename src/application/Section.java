@@ -13,15 +13,17 @@ public class Section {
     private double[] parameters;
     private int key;
     private int sectionLength;
-    private int startTransitionLength;
-    private int endTransitionLength;
+    private int startTransitionLength = 0;
+    private int endTransitionLength = 0;
 
     public Section(double[] musicGenerationParameters, int key, int sectionLength, boolean isStart, boolean isEnd, int startTransitionLength, int endTransitionLength) {
         // unless this is the first and/or last section, we need to make room for transitions
         if (!isStart) {
+            this.startTransitionLength = startTransitionLength;
             sectionLength -= startTransitionLength;
         }
         if (!isEnd) {
+            this.endTransitionLength = endTransitionLength;
             sectionLength -= endTransitionLength;
         }
 
@@ -33,8 +35,6 @@ public class Section {
         parameters = musicGenerationParameters;
         this.key = key;
         this.sectionLength = sectionLength;
-        this.startTransitionLength = startTransitionLength;
-        this.endTransitionLength = endTransitionLength;
 
         score = new Score();
 
