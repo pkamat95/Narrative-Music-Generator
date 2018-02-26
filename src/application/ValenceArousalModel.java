@@ -32,11 +32,15 @@ public class ValenceArousalModel {
         parameters[PITCH] = valence * 3; // thresholds for pitch are: under 1, between 1 and 2, and above 2
 
         // parameters controlled by arousal
-        parameters[TEMPO] = 60 + (arousal * 60); // min 60, max 120 bpm
+        parameters[TEMPO] = generateTempo();
         parameters[VOLUME] = 0.7 + (arousal * 0.3);
         parameters[VELOCITY] = arousal;
 
         return parameters;
+    }
+
+    public double generateTempo() {
+        return 60 + (arousal * 60); // min 60, max 120 bpm
     }
 
     public double getValence() {

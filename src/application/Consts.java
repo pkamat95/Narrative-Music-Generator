@@ -95,6 +95,11 @@ public final class Consts {
     public static final int VOLUME = 9;
     public static final int VELOCITY = 10;
 
+    // GUI related constants
+    public static final int SECTION_MINIMUM_SECONDS = 5;
+    public static final int MAX_SECTIONS = 9;
+    public static final int MAX_TRANSITION_LENGTH = 24;
+
     // other constants
     public static final int NUMBER_OF_PARAMETERS = 11;
     public static final int PHRASE_DURATION = 4;
