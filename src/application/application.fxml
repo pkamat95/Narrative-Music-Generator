@@ -132,7 +132,7 @@
             <HBox alignment="CENTER" layoutX="34.0" layoutY="66.0" spacing="20.0" AnchorPane.leftAnchor="26.0" AnchorPane.rightAnchor="26.0" AnchorPane.topAnchor="70.0">
                <children>
                   <Button mnemonicParsing="false" onAction="#handleGenerateCompositionButton" prefWidth="96.0" text="Generate&#10;Composition" textAlignment="CENTER" />
-                  <Button mnemonicParsing="false" prefWidth="96.0" text="Reset&#10;Composition" textAlignment="CENTER" />
+                  <Button mnemonicParsing="false" onAction="#handleResetCompositionButton" prefWidth="96.0" text="Reset&#10;Composition" textAlignment="CENTER" />
                </children>
             </HBox>
             <HBox alignment="CENTER" layoutX="44.0" layoutY="76.0" spacing="20.0" AnchorPane.leftAnchor="26.0" AnchorPane.rightAnchor="26.0" AnchorPane.topAnchor="135.0">

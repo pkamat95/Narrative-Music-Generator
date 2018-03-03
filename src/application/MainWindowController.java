@@ -50,13 +50,12 @@ public class MainWindowController implements Initializable {
         sectionList.add(new SectionParameterContainer());
 
         sectionStringList = FXCollections.observableArrayList();
-        int i;
-        for (i = 0; i < sectionList.size(); i++) {
-            sectionStringList.add(String.format("Section %d", i+1));
-        }
+        sectionStringList.add("Section 1");
 
         sectionComboBox.setItems(sectionStringList);
         sectionComboBox.getSelectionModel().selectFirst();
+
+        updateTransitionLengthArea(0);
 
         sectionDurationMinutesText.setTextFormatter(minutesFormatter());
         sectionDurationSecondsText.setTextFormatter(secondsFormatter());
@@ -73,8 +72,6 @@ public class MainWindowController implements Initializable {
         transitionLengthText.focusedProperty().addListener(e ->
                 handleTransitionLengthTextFocus()
         );
-
-        updateTransitionLengthArea(0);
     }
 
     // only allow numbers 1-4
@@ -207,18 +204,6 @@ public class MainWindowController implements Initializable {
         if (index > -1) {
             updateParametersText(index);
             updateTransitionLengthArea(index);
-
-            // load all parts of the section to spaces - done
-            // hide transitionlength area if this is the last section - done
-            // reset all paremeter textfields when adding a new section - done
-            // set parameters when user sets them - done
-            // clear transitions when a section is deleted - done
-            // set parameters to null when textfields are left empty - done
-            // calculate sectionLengthInBars - done
-            // calculate transitionlength in time
-            // calculate total length of composition
-            // generate composition button
-            // add help text for hovering over items as well as for when things don't work
         }
     }
 
@@ -378,35 +363,6 @@ public class MainWindowController implements Initializable {
             System.out.println(String.format("Section %d is not complete", incompleteSection));
             // change help text, use incompleteSection to advise user
         }
-
-        /*
-        // create list of sections
-        Section[] sections = new Section[3];
-        // set key
-        int key = C4;
-        // create model with emotion inputs
-        ValenceArousalModel model = new ValenceArousalModel();
-
-        model.setValence(0.5);
-        model.setArousal(0.5);
-        sections[0] = new Section(model.generateParameters(), key, 2, true, false, 0, 1);
-
-        model.setValence(0);
-        model.setArousal(1);
-        sections[1] = new Section(model.generateParameters(), key, 3,false, false, 1, 1);
-
-        model.setValence(1);
-        model.setArousal(0);
-        sections[2] = new Section(model.generateParameters(), key, 2,false, true, 1, 0);
-
-        Composition composition = new Composition(sections);
-        composition.generateComposition();
-
-        this.composition = composition.getScore();
-
-        Play.midi(this.composition);
-        */
-
     }
 
     public void handlePlayCompositionButton() {
@@ -449,14 +405,6 @@ public class MainWindowController implements Initializable {
         catch(IOException e) {
             System.out.println(e);
         }
-    }
-
-    private void setHelpText(String s) {
-        helpText.setText(s);
-    }
-
-    private void resetHelpText() {
-        helpText.setText("Hover over editable areas in the application to display helpful text");
     }
 
     private Integer calculateTransitionLengthInSeconds(int index) {
@@ -539,11 +487,28 @@ public class MainWindowController implements Initializable {
         }
     }
 
+    public void handleResetCompositionButton() {
+        sectionList.clear();
+        sectionList.add(new SectionParameterContainer());
+
+        sectionStringList = FXCollections.observableArrayList();
+        sectionStringList.add("Section 1");
+
+        sectionComboBox.setItems(sectionStringList);
+        sectionComboBox.getSelectionModel().selectFirst();
+
+        composition = null;
+    }
+
     public void setValence(double valence, int index) {
         sectionList.get(index).setValence(valence);
     }
 
     public void setArousal(double arousal, int index) {
         sectionList.get(index).setArousal(arousal);
+    }
+
+    public void resetHelpText() {
+        helpText.setText("Hover over editable areas in the application to display helpful text");
     }
 }

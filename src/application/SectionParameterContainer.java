@@ -11,7 +11,7 @@ public class SectionParameterContainer {
     private Integer startTransitionLength = null;
     private Integer endTransitionLength = null;
     private Double tempo;
-    private boolean isComplete = false; // once this is set to true
+    private boolean isComplete = false;
 
     public void setValence(double valence) {
         valenceArousalModel.setValence(valence);
