@@ -1,28 +1,33 @@
 package application;
 
+import javafx.application.Platform;
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.TextField;
-import javafx.scene.control.TextFormatter;
+import javafx.scene.control.*;
 import javafx.scene.layout.HBox;
 import javafx.scene.text.Text;
+import javafx.stage.FileChooser;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import jm.music.data.Score;
 import jm.util.Play;
+import jm.util.Write;
 
+import javax.sound.midi.*;
+import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 import static application.Consts.*;
+import static java.lang.Thread.sleep;
 import static jm.constants.Pitches.C4;
 
 public class MainWindowController implements Initializable {
@@ -38,11 +43,20 @@ public class MainWindowController implements Initializable {
     @FXML private Text helpText;
     @FXML private Text transitionDurationInTimeText;
     @FXML private Text totalCompositionDurationText;
+    @FXML private Button playButton;
+    @FXML private Slider seekBar;
+    @FXML private Text playMaxCompositionDuration;
+    @FXML private Text playCurrentCompositionDuration;
 
     private ArrayList<SectionParameterContainer> sectionList;
     private ObservableList<String> sectionStringList;
 
     private Score composition = null;
+    private Sequencer sequencer;
+    private ChangeListener<Number> seekBarListener;
+    private boolean seekBarIsListening = true;
+
+    private Stage primaryStage;
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -72,6 +86,18 @@ public class MainWindowController implements Initializable {
         transitionLengthText.focusedProperty().addListener(e ->
                 handleTransitionLengthTextFocus()
         );
+
+        setupSequencer();
+
+        seekBarListener = new ChangeListener<Number>() {
+            @Override
+            public void changed(ObservableValue<? extends Number> observable, Number oldValue, Number newValue) {
+                if (seekBarIsListening) {
+                    sequencer.setMicrosecondPosition(newValue.intValue()*1000000);
+                }
+            }
+        };
+        seekBar.valueProperty().addListener(seekBarListener);
     }
 
     // only allow numbers 1-4
@@ -358,6 +384,23 @@ public class MainWindowController implements Initializable {
             composition.generateComposition();
 
             this.composition = composition.getScore();
+            Write.midi(this.composition, "composition.mid");
+
+            try{
+                Sequence sequence = MidiSystem.getSequence(new File("composition.mid"));
+                long seconds = sequence.getMicrosecondLength()/1000000;
+                seekBar.setMax(seconds);
+                seekBar.setValue(0);
+                playMaxCompositionDuration.setText(String.format("%02d:%02d", seconds/60, seconds%60));
+            }
+            catch (IOException e){
+                System.out.println(e);
+                // add help text - composition MIDI could not be loaded
+            }
+            catch (InvalidMidiDataException e) {
+                System.out.println(e);
+                // add help text
+            }
         }
         else {
             System.out.println(String.format("Section %d is not complete", incompleteSection));
@@ -365,19 +408,99 @@ public class MainWindowController implements Initializable {
         }
     }
 
-    public void handlePlayCompositionButton() {
-        if (composition != null) {
-            Play.midi(composition);
+    private void setupSequencer() {
+        try {
+            sequencer = MidiSystem.getSequencer();
+            sequencer.open();
         }
-        else {
-            System.out.println("Composition has not been generated");
-            // change help text to advise user
+        catch (MidiUnavailableException e) {
+            System.out.println(e);
         }
 
-        // STILL NEED TO:
-        // change text to pause
-        // need to figure out how to stop people from playing repeatedly
-        // also need to figure out how to use seek bar, if note, replace with dropdown menu for key
+        sequencer.addMetaEventListener(new MetaEventListener() {
+            public void meta(MetaMessage event) {
+                // sequencer started
+                if (event.getType() == 88) {
+                    // run on Java FX thread
+                    Platform.runLater(new Runnable(){
+                        @Override
+                        public void run() {
+                            playButton.setText("Stop\nComposition");
+                            seekBar.setDisable(false);
+
+                            // poll for time updates
+                            Thread thread = new Thread(new Runnable() {
+                                @Override
+                                public void run() {
+                                    long seconds;
+                                    while(sequencer.isRunning()) {
+                                        try{
+                                            seconds = sequencer.getMicrosecondPosition()/1000000;
+
+                                            // remove listener when setting value
+                                            setSeekBarValue(seconds);
+
+                                            playCurrentCompositionDuration.setText(
+                                                    String.format("%02d:%02d", seconds/60, seconds%60)
+                                            );
+                                            sleep(500);
+                                        }
+                                        catch(InterruptedException e) {
+                                            System.out.println(e);
+                                        }
+                                    }
+                                }
+                            });
+                            thread.start();
+                        }
+                    });
+                }
+                // sequencer finished
+                else if (event.getType() == 47) {
+                    Platform.runLater(new Runnable(){
+                        @Override
+                        public void run() {
+                            stopComposition();
+                        }
+                    });
+                }
+            }
+        });
+    }
+
+    private void stopComposition() {
+        playButton.setText("Play\nComposition");
+        seekBar.setDisable(true);
+        seekBar.setValue(0);
+        playCurrentCompositionDuration.setText("00:00");
+    }
+
+    public void handlePlayCompositionButton() {
+        if (sequencer.isRunning()) {
+            sequencer.stop();
+            stopComposition();
+
+        }
+        else if (composition == null) {
+            System.out.println("Composition has not been generated");
+            // change help text to advise user
+
+        }
+        else {
+            try {
+                Sequence sequence = MidiSystem.getSequence(new File("composition.mid"));
+                sequencer.setSequence(sequence);
+                sequencer.start();
+            }
+            catch (IOException e){
+                System.out.println(e);
+                // add help text
+            }
+            catch (InvalidMidiDataException e) {
+                System.out.println(e);
+                // add help text
+            }
+        }
     }
 
     public void openTargetEmotionSelector() {
@@ -510,5 +633,51 @@ public class MainWindowController implements Initializable {
 
     public void resetHelpText() {
         helpText.setText("Hover over editable areas in the application to display helpful text");
+    }
+
+    private void handleSliderAction() {
+        System.out.println("hi");
+    }
+
+    private void setSeekBarValue(long value) {
+        // remove listener so that only changes from the user affect the listener
+        seekBarIsListening = false;
+        seekBar.setValue(value);
+        seekBarIsListening = true;
+    }
+
+    public void handleExportToMidiButton() {
+        if (composition != null) {
+            FileChooser fileChooser = new FileChooser();
+
+            FileChooser.ExtensionFilter extensionFilter = new FileChooser.ExtensionFilter("MIDI Files (*.mid)", "*.mid");
+            fileChooser.getExtensionFilters().add(extensionFilter);
+
+            File file = fileChooser.showSaveDialog(primaryStage);
+
+            if(file != null){
+                try{
+                    Sequence sequence = MidiSystem.getSequence(new File("composition.mid"));
+                    int[] allowedTypes = MidiSystem.getMidiFileTypes(sequence);
+                    MidiSystem.write(sequence, allowedTypes[0], file);
+                }
+                catch (IOException e){
+                    System.out.println(e);
+                    // add help text - error saving file
+                }
+                catch (InvalidMidiDataException e) {
+                    System.out.println(e);
+                    // add help text
+                }
+            }
+        }
+        else {
+            System.out.println("Composition has not been generated");
+            // add help text
+        }
+    }
+
+    public void setStage(Stage primaryStage) {
+        this.primaryStage = primaryStage;
     }
 }

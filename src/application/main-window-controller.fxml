@@ -137,14 +137,16 @@
             </HBox>
             <HBox alignment="CENTER" layoutX="44.0" layoutY="76.0" spacing="20.0" AnchorPane.leftAnchor="26.0" AnchorPane.rightAnchor="26.0" AnchorPane.topAnchor="135.0">
                <children>
-                  <Button mnemonicParsing="false" onAction="#handlePlayCompositionButton" prefWidth="96.0" text="Play&#10;Composition" textAlignment="CENTER" />
-                  <Button mnemonicParsing="false" prefWidth="96.0" text="Export to&#10;MIDI" textAlignment="CENTER" />
+                  <Button fx:id="playButton" mnemonicParsing="false" onAction="#handlePlayCompositionButton" prefWidth="96.0" text="Play&#10;Composition" textAlignment="CENTER" />
+                  <Button mnemonicParsing="false" onAction="#handleExportToMidiButton" prefWidth="96.0" text="Export to&#10;MIDI" textAlignment="CENTER" />
                </children>
             </HBox>
             <HBox layoutX="40.0" layoutY="207.0" AnchorPane.leftAnchor="36.0" AnchorPane.rightAnchor="36.0" AnchorPane.topAnchor="208.0">
                <children>
-                  <Slider prefWidth="210.0" />
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="00:00" />
+                  <Slider fx:id="seekBar" disable="true" prefWidth="210.0" />
+                  <Text fx:id="playCurrentCompositionDuration" strokeType="OUTSIDE" strokeWidth="0.0" text="00:00" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="/" />
+                  <Text fx:id="playMaxCompositionDuration" strokeType="OUTSIDE" strokeWidth="0.0" text="00:00" />
                </children>
             </HBox>
          </children>

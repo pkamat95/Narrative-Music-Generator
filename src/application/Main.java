@@ -10,7 +10,10 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("application.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("main-window-controller.fxml"));
+        Parent root = loader.load();
+        MainWindowController mainWindowController = loader.getController();
+        mainWindowController.setStage(primaryStage);
         primaryStage.setTitle("NMGS");
         primaryStage.setScene(new Scene(root, 600, 300));
         primaryStage.setResizable(false);
