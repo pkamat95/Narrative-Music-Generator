@@ -1,11 +1,11 @@
 package application;
 
-/**
- * Created by praneilkamat on 26/01/2018.
- */
 public final class Consts {
+    private Consts() {
+        throw new IllegalStateException("Consts Class");
+    }
 
-    // consts for transition matrix
+    // transition matrix constants
     // major chords
     public static final int I = 0;
     public static final int IS = 1;
@@ -26,42 +26,42 @@ public final class Consts {
     public static final int VII = 11;
 
     // minor chords
-    public static final int i = 12;
-    public static final int iS = 13;
-    public static final int iiF = 13;
-    public static final int ii = 14;
-    public static final int iiS = 15;
-    public static final int iiiF = 15;
-    public static final int iii = 16;
-    public static final int iv = 17;
-    public static final int ivS = 18;
-    public static final int vF = 18;
-    public static final int v = 19;
-    public static final int vS = 20;
-    public static final int viF = 20;
-    public static final int vi = 21;
-    public static final int viS = 22;
-    public static final int viiF = 22;
-    public static final int vii = 23;
+    public static final int IM = 12;
+    public static final int IMS = 13;
+    public static final int IIMF = 13;
+    public static final int IIM = 14;
+    public static final int IIMS = 15;
+    public static final int IIIMF = 15;
+    public static final int IIIM = 16;
+    public static final int IVM = 17;
+    public static final int IVMS = 18;
+    public static final int VMF = 18;
+    public static final int VM = 19;
+    public static final int VMS = 20;
+    public static final int VIMF = 20;
+    public static final int VIM = 21;
+    public static final int VIMS = 22;
+    public static final int VIIMF = 22;
+    public static final int VIIM = 23;
 
     // diminished chords
-    public static final int io = 24;
-    public static final int ioS = 25;
-    public static final int iioF = 25;
-    public static final int iio = 26;
-    public static final int iioS = 27;
-    public static final int iiioF = 27;
-    public static final int iiio = 28;
-    public static final int ivo = 29;
-    public static final int ivoS = 30;
-    public static final int voF = 30;
-    public static final int vo = 31;
-    public static final int voS = 32;
-    public static final int vioF = 32;
-    public static final int vio = 33;
-    public static final int vioS = 34;
-    public static final int viioF = 34;
-    public static final int viio = 35;
+    public static final int IO = 24;
+    public static final int IOS = 25;
+    public static final int IIOF = 25;
+    public static final int IIO = 26;
+    public static final int IIOS = 27;
+    public static final int IIIOF = 27;
+    public static final int IIIO = 28;
+    public static final int IVO = 29;
+    public static final int IVOS = 30;
+    public static final int VOF = 30;
+    public static final int VO = 31;
+    public static final int VOS = 32;
+    public static final int VIOF = 32;
+    public static final int VIO = 33;
+    public static final int VIOS = 34;
+    public static final int VIIOF = 34;
+    public static final int VIIO = 35;
 
     // dominant chords
     public static final int I7 = 36;
@@ -82,7 +82,7 @@ public final class Consts {
     public static final int VII7F = 46;
     public static final int VII7 = 47;
 
-    // transition matrix filter parameters
+    // transition matrix filter parameter indexes
     public static final int MAJOR_CHORDS = 0;
     public static final int MINOR_CHORDS = 1;
     public static final int DIMINISHED_CHORDS = 2;
@@ -99,10 +99,14 @@ public final class Consts {
     public static final int SECTION_MINIMUM_SECONDS = 5;
     public static final int MAX_SECTIONS = 9;
     public static final int MAX_TRANSITION_LENGTH = 24;
-    public static final int VALENCEAROUSALMODELSIZE = 230;
-    public static final double CROSSHAIRSIZE = 5;
+    public static final int VALENCE_AROUSAL_MODEL_SIZE = 230;
+    public static final double CROSSHAIR_SIZE = 5;
+    public static final String TEMP_MIDI_FILE = "composition.mid";
+    public static final String TIME_FORMAT_SPECIFIER = "%02d:%02d";
+
     // other constants
     public static final int NUMBER_OF_PARAMETERS = 11;
     public static final int PHRASE_DURATION = 4;
     public static final int NUMBER_OF_NOTES_IN_CHORD = 4;
+    public static final int NUMBER_OF_CHORDS = 48;
 }
