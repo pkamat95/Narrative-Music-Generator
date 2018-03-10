@@ -69,8 +69,7 @@ public class TargetEmotionSelectorController {
     }
 
     public void handleSetTargetEmotionButton() {
-        mainWindowController.setValence(Double.parseDouble(valenceText.getText()), index);
-        mainWindowController.setArousal(Double.parseDouble(arousalText.getText()), index);
+        mainWindowController.setValenceAndArousal(Double.parseDouble(valenceText.getText()), Double.parseDouble(arousalText.getText()), index);
         mainWindowController.updateParametersText(index);
 
         Stage stage = (Stage) setTargetEmotionButton.getScene().getWindow();

@@ -26,6 +26,8 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 import static application.Consts.*;
 import static java.lang.Thread.sleep;
@@ -47,14 +49,14 @@ public class MainWindowController implements Initializable {
     @FXML private Text playMaxCompositionDuration;
     @FXML private Text playCurrentCompositionDuration;
 
+    private final Logger logger = Logger.getLogger("ErrorLogging");
+    private Stage primaryStage;
     private ArrayList<SectionParameterContainer> sectionList;
     private ObservableList<String> sectionStringList;
 
     private Score composition = null;
     private Sequencer sequencer;
     private boolean seekBarIsListening = true;
-
-    private Stage primaryStage;
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -117,7 +119,6 @@ public class MainWindowController implements Initializable {
         });
     }
 
-
     // only allow numbers and up to 2 characters
     private TextFormatter<String> transitionDurationFormatter() {
         return new TextFormatter<>( change -> {
@@ -152,6 +153,7 @@ public class MainWindowController implements Initializable {
 
         if (size % 2 != 0) {
             size ++;
+            helpText.setText("The transition length must be even.");
         }
 
         if (size > MAX_TRANSITION_LENGTH) {
@@ -342,6 +344,13 @@ public class MainWindowController implements Initializable {
         }
 
         if (isComplete) {
+            // reset playback if sequencer is running
+            if (sequencer.isRunning()) {
+                sequencer.stop();
+                stopComposition();
+            }
+
+            // generate composition
             // set key
             int key = C4;
 
@@ -372,30 +381,34 @@ public class MainWindowController implements Initializable {
                 isStart = (i == 0);
                 isEnd = (i == sectionList.size() - 1);
 
-                sections[i] = new Section(parameters, key, sectionLength,isStart, isEnd, startTransitionLength, endTransitionLength);
+                sections[i] = new Section(parameters, key, sectionLength, isStart, isEnd, startTransitionLength, endTransitionLength);
+
+                Composition comp = new Composition(sections);
+                comp.generateComposition();
+
+                this.composition = comp.getScore();
+                Write.midi(this.composition, TEMP_MIDI_FILE);
             }
 
-            Composition composition = new Composition(sections);
-            composition.generateComposition();
-
-            this.composition = composition.getScore();
-            Write.midi(this.composition, TEMP_MIDI_FILE);
-
-            try{
-                Sequence sequence = MidiSystem.getSequence(new File(TEMP_MIDI_FILE));
-                long seconds = sequence.getMicrosecondLength()/1000000;
-                seekBar.setMax(seconds);
-                seekBar.setValue(0);
-                playMaxCompositionDuration.setText(String.format(TIME_FORMAT_SPECIFIER, seconds/60, seconds%60));
-            }
-            catch (IOException | InvalidMidiDataException e){
-                System.out.println(e);
-                // add help text - composition MIDI could not be loaded
-            }
+            helpText.setText("Composition has been generated and loaded for playback.");
+            setupPlayback();
         }
         else {
-            System.out.println(String.format("Section %d is not complete", incompleteSection));
-            // change help text, use incompleteSection to advise user
+            helpText.setText(String.format("Please complete section %d to generate composition.", incompleteSection));
+        }
+    }
+
+    private void setupPlayback() {
+        try{
+            Sequence sequence = MidiSystem.getSequence(new File(TEMP_MIDI_FILE));
+            long seconds = sequence.getMicrosecondLength()/1000000;
+            seekBar.setMax(seconds);
+            seekBar.setValue(0);
+            playMaxCompositionDuration.setText(String.format(TIME_FORMAT_SPECIFIER, seconds/60, seconds%60));
+        }
+        catch (IOException | InvalidMidiDataException e){
+            logger.log(Level.SEVERE, e.toString(), e);
+            helpText.setText("MIDI file could not be loaded for playback.");
         }
     }
 
@@ -405,7 +418,7 @@ public class MainWindowController implements Initializable {
             sequencer.open();
         }
         catch (MidiUnavailableException e) {
-            System.out.println(e);
+            logger.log(Level.SEVERE, e.toString(), e);
         }
 
         sequencer.addMetaEventListener(new MetaEventListener() {
@@ -437,7 +450,7 @@ public class MainWindowController implements Initializable {
                                             sleep(500);
                                         }
                                         catch(InterruptedException e) {
-                                            System.out.println(e);
+                                            logger.log(Level.SEVERE, e.toString(), e);
                                             Thread.currentThread().interrupt();
                                         }
                                     }
@@ -474,9 +487,7 @@ public class MainWindowController implements Initializable {
 
         }
         else if (composition == null) {
-            System.out.println("Composition has not been generated");
-            // change help text to advise user
-
+            helpText.setText("Generate composition to use playback features.");
         }
         else {
             try {
@@ -485,8 +496,8 @@ public class MainWindowController implements Initializable {
                 sequencer.start();
             }
             catch (IOException | InvalidMidiDataException e){
-                System.out.println(e);
-                // add help text
+                logger.log(Level.SEVERE, e.toString(), e);
+                helpText.setText("Error loading MIDI file. Could not play composition.");
             }
         }
     }
@@ -513,7 +524,7 @@ public class MainWindowController implements Initializable {
             stage.showAndWait();
         }
         catch(IOException e) {
-            System.out.println(e);
+            logger.log(Level.SEVERE, e.toString(), e);
         }
     }
 
@@ -609,15 +620,13 @@ public class MainWindowController implements Initializable {
         sectionComboBox.setItems(sectionStringList);
         sectionComboBox.getSelectionModel().selectFirst();
 
-        composition = null;
+        helpText.setText("All changes have been reset.");
     }
 
-    void setValence(double valence, int index) {
+    void setValenceAndArousal(double valence, double arousal, int index) {
         sectionList.get(index).setValence(valence);
-    }
-
-    void setArousal(double arousal, int index) {
         sectionList.get(index).setArousal(arousal);
+        helpText.setText("Valence and Arousal have been updated.");
     }
 
     private void setSeekBarValue(long value) {
@@ -643,14 +652,13 @@ public class MainWindowController implements Initializable {
                     MidiSystem.write(sequence, allowedTypes[0], file);
                 }
                 catch (IOException | InvalidMidiDataException e){
-                    System.out.println(e);
-                    // add help text - error saving file
+                    logger.log(Level.SEVERE, e.toString(), e);
+                    helpText.setText("Could not save MIDI file.");
                 }
             }
         }
         else {
-            System.out.println("Composition has not been generated");
-            // add help text
+            helpText.setText("Generate composition to be able to export.");
         }
     }
 
@@ -658,7 +666,55 @@ public class MainWindowController implements Initializable {
         this.primaryStage = primaryStage;
     }
 
+    public void onAddSectionButtonHover() {
+        helpText.setText("Click to add a section to the composition.");
+    }
+
+    public void onDeleteSectionButtonHover() {
+        helpText.setText("Click to delete the currently selected section.");
+    }
+
+    public void onSectionDurationHover() {
+        helpText.setText("Section duration does not include the transition to the next section.");
+    }
+
+    public void onValenceArousalTextHover() {
+        helpText.setText("Valence and Arousal are dimensions for classifying emotions.");
+    }
+
+    public void onSetTargetEmotionButtonHover() {
+        helpText.setText("Click to open a window to set the target emotion for the current section");
+    }
+
+    public void onTransitionLengthDurationTextHover() {
+        helpText.setText("Duration of the transition length. Changing target emotion may affect this.");
+    }
+
+    public void onTransitionLengthHover() {
+        helpText.setText("Set length of the transition to next section in bars (Each chord lasts for one bar)");
+    }
+
+    public void onTotalCompositionDurationTextHover() {
+        helpText.setText("Estimated total composition duration. Updates as changes are made.");
+    }
+
+    public void onGenerateCompositionButtonHover() {
+        helpText.setText("Click to generate the composition based on the current values.");
+    }
+
+    public void onResetCompositionButtonHover() {
+        helpText.setText("Click to reset all changes made.");
+    }
+
+    public void onPlayCompositionButtonHover() {
+        helpText.setText("Click to play/stop the generated composition.");
+    }
+
+    public void onExportToMidiButtonHover() {
+        helpText.setText("Click to export the generated composition in MIDI format.");
+    }
+
     public void resetHelpText() {
-        helpText.setText("Hover over editable areas in the application to display helpful text");
+        helpText.setText("Hover over interactive areas in the application to display helpful text.");
     }
 }
