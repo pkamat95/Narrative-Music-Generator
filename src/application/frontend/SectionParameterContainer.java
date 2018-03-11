@@ -72,6 +72,19 @@ class SectionParameterContainer {
         return endTransitionLength;
     }
 
+    double getTempo() {
+        if (tempo != null) {
+            return tempo;
+        }
+        else {
+            return valenceArousalModel.generateTempo();
+        }
+    }
+
+    double[] generateParameters() {
+        return valenceArousalModel.generateParameters();
+    }
+
     boolean isComplete() {
         return isComplete;
     }
@@ -82,13 +95,13 @@ class SectionParameterContainer {
 
     private void calculateSectionLengthInBarsAndUpdateTempo() {
         if (sectionLengthMinutes != null && sectionLengthSeconds != null) {
-            double tempo = valenceArousalModel.generateTempo();
+            double rawTempo = valenceArousalModel.generateTempo();
             double totalMinutes = calculateTotalMinutes();
 
-            sectionLengthInBars = (int) Math.round((totalMinutes * tempo) / 4);
+            sectionLengthInBars = (int) Math.round((totalMinutes * rawTempo) / 4);
 
             // calculate this so that the tempo ensures that the time of the section will be equal to what the user set
-            this.tempo = (sectionLengthInBars / totalMinutes) * 4;
+            tempo = (sectionLengthInBars / totalMinutes) * 4;
         }
         else {
             sectionLengthInBars = null;
@@ -101,18 +114,5 @@ class SectionParameterContainer {
         double seconds = (double) sectionLengthSeconds;
 
         return minutes + (seconds / 60);
-    }
-
-    double getTempo() {
-        if (tempo != null) {
-            return tempo;
-        }
-        else {
-            return valenceArousalModel.generateTempo();
-        }
-    }
-
-    double[] generateParameters() {
-        return valenceArousalModel.generateParameters();
     }
 }

@@ -16,12 +16,12 @@ public class TargetEmotionSelectorController {
     private MainWindowController mainWindowController;
     private int index;
 
-    @FXML Text valenceText;
-    @FXML Text arousalText;
-    @FXML Button setTargetEmotionButton;
-    @FXML AnchorPane valenceArousalModel;
-    @FXML Line crosshairX;
-    @FXML Line crosshairY;
+    @FXML private Text valenceText;
+    @FXML private Text arousalText;
+    @FXML private Button setTargetEmotionButton;
+    @FXML private AnchorPane valenceArousalModel;
+    @FXML private Line crosshairX;
+    @FXML private Line crosshairY;
 
     void init() {
         valenceArousalModel.setOnMouseClicked(new EventHandler<MouseEvent>() {

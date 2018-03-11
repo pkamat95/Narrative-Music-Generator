@@ -17,8 +17,8 @@
             <HBox layoutX="26.0" layoutY="10.0" spacing="10.0" AnchorPane.leftAnchor="26.0" AnchorPane.rightAnchor="27.0" AnchorPane.topAnchor="20.0">
                <children>
                   <ComboBox fx:id="sectionComboBox" onAction="#handleSectionListAction" prefHeight="27.0" prefWidth="223.0" />
-                  <Button mnemonicParsing="false" onAction="#handleAddSectionButton" onMouseEntered="#onAddSectionButtonHover" onMouseExited="#resetHelpText" prefWidth="79.0" text="+" />
-                  <Button mnemonicParsing="false" onAction="#handleDeleteSectionButton" onMouseEntered="#onDeleteSectionButtonHover" onMouseExited="#resetHelpText" prefWidth="79.0" text="-" />
+                  <Button fx:id="addSectionButton" mnemonicParsing="false" onAction="#handleAddSectionButton" onMouseEntered="#onAddSectionButtonHover" onMouseExited="#resetHelpText" prefWidth="79.0" text="+" />
+                  <Button fx:id="deleteSectionButton" mnemonicParsing="false" onAction="#handleDeleteSectionButton" onMouseEntered="#onDeleteSectionButtonHover" onMouseExited="#resetHelpText" prefWidth="79.0" text="-" />
                </children>
             </HBox>
             <HBox alignment="CENTER" layoutX="14.0" layoutY="55.0" spacing="10.0" AnchorPane.leftAnchor="26.0" AnchorPane.rightAnchor="27.0" AnchorPane.topAnchor="70.0">
@@ -135,14 +135,14 @@
             </HBox>
             <HBox alignment="CENTER" layoutX="34.0" layoutY="66.0" spacing="20.0" AnchorPane.leftAnchor="26.0" AnchorPane.rightAnchor="26.0" AnchorPane.topAnchor="70.0">
                <children>
-                  <Button mnemonicParsing="false" onAction="#handleGenerateCompositionButton" onMouseEntered="#onGenerateCompositionButtonHover" onMouseExited="#resetHelpText" prefWidth="96.0" text="Generate&#10;Composition" textAlignment="CENTER" />
-                  <Button mnemonicParsing="false" onAction="#handleResetCompositionButton" onMouseEntered="#onResetCompositionButtonHover" onMouseExited="#resetHelpText" prefWidth="96.0" text="Reset&#10;Composition" textAlignment="CENTER" />
+                  <Button fx:id="generateCompositionButton" mnemonicParsing="false" onAction="#handleGenerateCompositionButton" onMouseEntered="#onGenerateCompositionButtonHover" onMouseExited="#resetHelpText" prefWidth="96.0" text="Generate&#10;Composition" textAlignment="CENTER" />
+                  <Button fx:id="resetCompositionButton" mnemonicParsing="false" onAction="#handleResetCompositionButton" onMouseEntered="#onResetCompositionButtonHover" onMouseExited="#resetHelpText" prefWidth="96.0" text="Reset&#10;Composition" textAlignment="CENTER" />
                </children>
             </HBox>
             <HBox alignment="CENTER" layoutX="44.0" layoutY="76.0" spacing="20.0" AnchorPane.leftAnchor="26.0" AnchorPane.rightAnchor="26.0" AnchorPane.topAnchor="135.0">
                <children>
                   <Button fx:id="playButton" mnemonicParsing="false" onAction="#handlePlayCompositionButton" onMouseEntered="#onPlayCompositionButtonHover" onMouseExited="#resetHelpText" prefWidth="96.0" text="Play&#10;Composition" textAlignment="CENTER" />
-                  <Button mnemonicParsing="false" onAction="#handleExportToMidiButton" onMouseEntered="#onExportToMidiButtonHover" onMouseExited="#resetHelpText" prefWidth="96.0" text="Export to&#10;MIDI" textAlignment="CENTER" />
+                  <Button fx:id="exportCompositionButton" mnemonicParsing="false" onAction="#handleExportToMidiButton" onMouseEntered="#onExportToMidiButtonHover" onMouseExited="#resetHelpText" prefWidth="96.0" text="Export to&#10;MIDI" textAlignment="CENTER" />
                </children>
             </HBox>
             <HBox layoutX="40.0" layoutY="207.0" AnchorPane.leftAnchor="36.0" AnchorPane.rightAnchor="36.0" AnchorPane.topAnchor="208.0">
@@ -162,7 +162,7 @@
                   <Font size="14.0" />
                </font>
             </Text>
-            <Text fx:id="helpText" strokeType="OUTSIDE" strokeWidth="0.0" text="Hover over interactive areas in the application to display helpful text">
+            <Text fx:id="helpText" strokeType="OUTSIDE" strokeWidth="0.0" text="Hover over interactive areas in the application to display helpful text.">
                <font>
                   <Font size="14.0" />
                </font>

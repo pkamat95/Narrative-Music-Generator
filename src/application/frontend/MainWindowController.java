@@ -170,6 +170,9 @@ public class MainWindowController implements Initializable {
             sectionComboBox.getSelectionModel().select(sectionList.size()-1);
             resetParametersText();
         }
+        else {
+            helpText.setText("The maximum number of sections has been reached.");
+        }
     }
 
     public void handleDeleteSectionButton() {
@@ -215,6 +218,9 @@ public class MainWindowController implements Initializable {
             else {
                 sectionComboBox.getSelectionModel().select(index);
             }
+        }
+        else {
+            helpText.setText("The composition must contain at least one section.");
         }
     }
 
