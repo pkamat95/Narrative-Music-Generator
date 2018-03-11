@@ -45,10 +45,12 @@ public class MainWindowControllerTest extends ApplicationTest {
     public void addSectionButtonAddsNewSection() {
         Button addSectionButton = find("#addSectionButton");
         ComboBox sectionComboBox = find("#sectionComboBox");
+        Text helpText = find("#helpText");
         clickOn(addSectionButton);
 
         assertEquals(2, sectionComboBox.getItems().size());
         assertEquals("Section 2", sectionComboBox.getSelectionModel().getSelectedItem().toString());
+        assertEquals("Section added.", helpText.getText());
     }
 
     @Test
@@ -72,12 +74,14 @@ public class MainWindowControllerTest extends ApplicationTest {
         Button addSectionButton = find("#addSectionButton");
         Button deleteSectionButton = find("#deleteSectionButton");
         ComboBox sectionComboBox = find("#sectionComboBox");
+        Text helpText = find("#helpText");
 
         clickOn(addSectionButton);
         clickOn(deleteSectionButton);
 
         assertEquals(1, sectionComboBox.getItems().size());
         assertEquals("Section 1", sectionComboBox.getSelectionModel().getSelectedItem().toString());
+        assertEquals("Section deleted.", helpText.getText());
     }
 
     @Test

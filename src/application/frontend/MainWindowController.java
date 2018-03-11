@@ -169,6 +169,7 @@ public class MainWindowController implements Initializable {
             sectionStringList.add(String.format("Section %d", sectionList.size()));
             sectionComboBox.getSelectionModel().select(sectionList.size()-1);
             resetParametersText();
+            helpText.setText("Section added.");
         }
         else {
             helpText.setText("The maximum number of sections has been reached.");
@@ -218,6 +219,7 @@ public class MainWindowController implements Initializable {
             else {
                 sectionComboBox.getSelectionModel().select(index);
             }
+            helpText.setText("Section deleted.");
         }
         else {
             helpText.setText("The composition must contain at least one section.");

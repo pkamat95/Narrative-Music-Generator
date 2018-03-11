@@ -1,0 +1,1498 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Narrative Music Generator:jar" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Update lib directory">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/3/1349082b048010b3820e024b6e2e0b3c56b0a095" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/9/199ee3490564eedf90fe6fd2f60eef8b2ba06f9d" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/b/1b13cad6ef4a23a8bbec970170c7e695048864b7" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/1/21919613412fb00b74d5ea53c115f87af3315546" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/b/2bf62161eec4d30db808431cae260468bea02fa5" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/f/2fbe8ee40174a0cc3ca69a52f8527dd62cf07484" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/7/37ab94345d5a815daadb9a7d1998c6feeb7a2ff1" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/a/4a9683171a0e24aa39c20f66ccb076dfc0886fe9" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/e/5e1a5b393c629047b6e653bd94419d2a5e719f7e" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/3/630e6cf8d146f19ddca051717f59a6c6d7fc8794" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/c/6c91a9589a347da84440f122df2db185ad70e93b" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/0/708289102eb48bc1ebdc3548ab3ce0141b0385a1" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/5/753950dac586aeda950bb025cc175de0c4731cfe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/f/7fb523e12098eebe18f297a264ece4839a6e40cc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/5/85729ff3b35753b01cbde43d8a45177f28979b24" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/b/8bc30b8f50a7a9e52a378bb0e1823e0293b31b1f" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/d/8dfc011d59fe18f04ae529b6f6cd53791d9cd93e" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/2/9237b67ffca9e85d568d8b65fc75d88b777f3af3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/3/938bee2c77386e04b4b30067ac5bffcf3b1b84a2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/c/9c1f10662fbe39c94a9adef803a8a8a059fad7a4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/f/9fe84ebb15faf917b7def6236dba604453cc61e0" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/1/a11524b4df41e568b3c4fd50f7a8bffdc6da5c6f" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/7/a77f9bbb2b836f7e5030c3c39b67ef0f559c01cd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/9/a96538bb0e2734495ab3bc5191ec27517ecd0af0" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/e/ae975936dfd3f4be3d6088bf55efcadfe55a1dcc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/f/afbada960760fc957cc8a074aae8e0eb9397de5d" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/3/b35440c7d050f58b6407e6fe4df441f2e515225e" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/a/bae04a860ef67877acdfb030449b06248d98bea6" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/e/bebfd52568097bed4cdc833677253d564edc2450" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/0/d07feff0023cdf674334569b36f538f7918956e9" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/2/e2ec405acda28c9efea673dea1faf30550198a27" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/5/e573d90003c8bf9ad51c37958644cc5bcc96c12f" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/b/ebd28f84a036212f32528b61906a079f57da12b9" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/3/f368b514346f05bee1abe37f4e0c493db6a64b44" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/composition.mid" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/assertj-core-3.9.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/testfx-core-4.0.12-alpha.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/testfx-internal-java8-4.0.12-alpha.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/testfx-junit-4.0.12-alpha.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Narrative_Music_Generator_jar.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Narrative_Music_Generator_jar/Narrative Music Generator.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Narrative Music Generator/application/Consts.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Narrative Music Generator/application/frontend/Main$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Narrative Music Generator/application/frontend/Main.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Narrative Music Generator/application/frontend/MainWindowController$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Narrative Music Generator/application/frontend/MainWindowController$2$1$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Narrative Music Generator/application/frontend/MainWindowController$2$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Narrative Music Generator/application/frontend/MainWindowController$2$2.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Narrative Music Generator/application/frontend/MainWindowController$2.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Narrative Music Generator/application/frontend/MainWindowController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Narrative Music Generator/application/frontend/SectionParameterContainer.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Narrative Music Generator/application/frontend/TargetEmotionSelectorController$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Narrative Music Generator/application/frontend/TargetEmotionSelectorController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Narrative Music Generator/application/highbackend/Composition.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Narrative Music Generator/application/highbackend/Section.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Narrative Music Generator/application/highbackend/TransitionHelper.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Narrative Music Generator/application/lowbackend/ChordGenerator.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Narrative Music Generator/application/lowbackend/ChordSelector.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Narrative Music Generator/application/lowbackend/ChordTransitionMatrix.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Narrative Music Generator/application/lowbackend/ChordsFilter$DiminishedChordsFilter.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Narrative Music Generator/application/lowbackend/ChordsFilter$DominantChordsFilter.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Narrative Music Generator/application/lowbackend/ChordsFilter$MajorChordsFilter.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Narrative Music Generator/application/lowbackend/ChordsFilter$MinorChordsFilter.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Narrative Music Generator/application/lowbackend/ChordsFilter.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Narrative Music Generator/application/lowbackend/DiatonicFilter.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Narrative Music Generator/application/lowbackend/MusicGenerator.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Narrative Music Generator/application/lowbackend/TonalityFilter.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Narrative Music Generator/application/lowbackend/TransitionMatrixFilter.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Narrative Music Generator/application/lowbackend/TransitionMatrixGenerator.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Narrative Music Generator/application/lowbackend/ValenceArousalModel.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/test/Narrative Music Generator/application/frontend/MainWindowControllerTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/test/Narrative Music Generator/application/frontend/SectionParameterContainerTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/test/Narrative Music Generator/application/frontend/TargetEmotionSelectorControllerTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/test/Narrative Music Generator/application/highbackend/CompositionTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/test/Narrative Music Generator/application/highbackend/SectionTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/test/Narrative Music Generator/application/highbackend/TransitionHelperTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/test/Narrative Music Generator/application/lowbackend/ChordGeneratorTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/test/Narrative Music Generator/application/lowbackend/ChordSelectorTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/test/Narrative Music Generator/application/lowbackend/ChordTransitionMatrixTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/test/Narrative Music Generator/application/lowbackend/ChordsFilterTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/test/Narrative Music Generator/application/lowbackend/DiatonicFilterTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/test/Narrative Music Generator/application/lowbackend/MusicGeneratorTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/test/Narrative Music Generator/application/lowbackend/TonalityFilterTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/test/Narrative Music Generator/application/lowbackend/TransitionMatrixGeneratorTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/test/Narrative Music Generator/application/lowbackend/ValenceArousalModelTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/Narrative_Music_Generator_jar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Narrative Music Generator/META-INF/MANIFEST.MF" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Narrative Music Generator/application/frontend/main_window_controller.fxml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Narrative Music Generator/application/frontend/target-emotion-selector.fxml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/application/frontend/MainWindowController.java" afterPath="$PROJECT_DIR$/src/application/frontend/MainWindowController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tests/application/frontend/MainWindowControllerTest.java" afterPath="$PROJECT_DIR$/src/tests/application/frontend/MainWindowControllerTest.java" />
+    </list>
+    <ignored path="JavaFxApplication.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/Narrative Music Generator$All_tests.coverage" NAME="All tests Coverage Results" MODIFIED="1518922093105" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>application.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Narrative Music Generator$Main.coverage" NAME="Main Coverage Results" MODIFIED="1518921774620" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>application.*</FILTER>
+    </SUITE>
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DebuggerManager">
+    <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true" converted="true">
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </breakpoint_any>
+    <ui_properties converted="true" />
+    <breakpoint_rules converted="true" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="JavaFxApplication" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+        <option value="Class" />
+        <option value="JUnit4 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>sec</find>
+      <find>formatTransitionlength</find>
+      <find>formatTransitionduration</find>
+      <find>formattransition</find>
+      <find>transitionduration</find>
+      <find>System.out</find>
+      <find>getTempo</find>
+      <find>gettempo</find>
+      <find>calculate</find>
+      <find>generate</find>
+      <find>system.out</find>
+      <find>sectionLength</find>
+      <find>seekbar</find>
+      <find>stop</find>
+      <find>file</find>
+      <find>new file</find>
+      <find>sectionparametercon</find>
+      <find>composition.mid</find>
+      <find>&quot;%02d:%02d&quot;</find>
+      <find>system.out.print</find>
+      <find>logger</find>
+      <find>openTar</find>
+      <find>updatetransitionlengtharea</find>
+      <find>hel</find>
+    </findStrings>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="gui" />
+      </map>
+    </option>
+    <option name="FORCE_PUSH_ALLOWED" value="true" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/application/high_back_end/TransitionHelper.java" />
+        <option value="$PROJECT_DIR$/src/application/TransitionMatrixFilter.java" />
+        <option value="$PROJECT_DIR$/src/application/low_back_end/TransitionMatrixFilter.java" />
+        <option value="$PROJECT_DIR$/src/application/low_back_end/TransitionMatrixGenerator.java" />
+        <option value="$PROJECT_DIR$/src/application/low_back_end/ValenceArousalModel.java" />
+        <option value="$PROJECT_DIR$/src/application/highbackend/Composition.java" />
+        <option value="$PROJECT_DIR$/src/application/lowbackend/MusicGenerator.java" />
+        <option value="$PROJECT_DIR$/src/application/lowbackend/ValenceArousalModel.java" />
+        <option value="$PROJECT_DIR$/src/tests/application/ChordSelectorTest.java" />
+        <option value="$PROJECT_DIR$/src/tests/application/CompositionTest.java" />
+        <option value="$PROJECT_DIR$/src/tests/application/SectionTest.java" />
+        <option value="$PROJECT_DIR$/src/tests/application/TonalityFilterTest.java" />
+        <option value="$PROJECT_DIR$/src/tests/application/TransitionHelperTest.java" />
+        <option value="$PROJECT_DIR$/src/tests/application/TransitionMatrixGeneratorTest.java" />
+        <option value="$PROJECT_DIR$/src/tests/application/ValenceArousalModelTest.java" />
+        <option value="$PROJECT_DIR$/src/tests/application/ChordGeneratorTest.java" />
+        <option value="$PROJECT_DIR$/src/tests/application/ChordsFilterTest.java" />
+        <option value="$PROJECT_DIR$/src/tests/application/DiatonicFilterTest.java" />
+        <option value="$PROJECT_DIR$/src/tests/application/MusicGeneratorTest.java" />
+        <option value="$PROJECT_DIR$/src/application/Consts.java" />
+        <option value="$PROJECT_DIR$/src/tests/application/ChordTransitionMatrixTest.java" />
+        <option value="$PROJECT_DIR$/src/tests/application/lowbackend/ValenceArousalModelTest.java" />
+        <option value="$PROJECT_DIR$/src/tests/application/lowbackend/TonalityFilterTest.java" />
+        <option value="$PROJECT_DIR$/src/tests/application/lowbackend/DiatonicFilterTest.java" />
+        <option value="$PROJECT_DIR$/src/tests/application/lowbackend/ChordTransitionMatrixTest.java" />
+        <option value="$PROJECT_DIR$/src/tests/application/lowbackend/ChordsFilterTest.java" />
+        <option value="$PROJECT_DIR$/src/tests/application/lowbackend/ChordSelectorTest.java" />
+        <option value="$PROJECT_DIR$/src/tests/application/lowbackend/ChordGeneratorTest.java" />
+        <option value="$PROJECT_DIR$/src/tests/application/highbackend/CompositionTest.java" />
+        <option value="$PROJECT_DIR$/src/tests/application/highbackend/SectionTest.java" />
+        <option value="$PROJECT_DIR$/src/tests/application/highbackend/TransitionHelperTest.java" />
+        <option value="$PROJECT_DIR$/src/tests/application/lowbackend/TransitionMatrixGeneratorTest.java" />
+        <option value="$PROJECT_DIR$/src/application/lowbackend/TransitionMatrixFilter.java" />
+        <option value="$PROJECT_DIR$/src/application/lowbackend/ChordsFilter.java" />
+        <option value="$PROJECT_DIR$/src/application/lowbackend/ChordGenerator.java" />
+        <option value="$PROJECT_DIR$/src/application/lowbackend/ChordSelector.java" />
+        <option value="$PROJECT_DIR$/src/application/lowbackend/DiatonicFilter.java" />
+        <option value="$PROJECT_DIR$/src/application/lowbackend/TonalityFilter.java" />
+        <option value="$PROJECT_DIR$/src/application/lowbackend/ChordTransitionMatrix.java" />
+        <option value="$PROJECT_DIR$/src/application/highbackend/TransitionHelper.java" />
+        <option value="$PROJECT_DIR$/src/application/highbackend/Section.java" />
+        <option value="$PROJECT_DIR$/src/application/lowbackend/TransitionMatrixGenerator.java" />
+        <option value="$PROJECT_DIR$/src/application/frontend/main_window_controller.fxml" />
+        <option value="$PROJECT_DIR$/src/tests/application/lowbackend/MusicGeneratorTest.java" />
+        <option value="$PROJECT_DIR$/src/tests/application/frontend/MainTest.java" />
+        <option value="$PROJECT_DIR$/src/tests/application/frontend/SectionParameterContainerTest.java" />
+        <option value="$PROJECT_DIR$/src/application/frontend/TargetEmotionSelectorController.java" />
+        <option value="$PROJECT_DIR$/src/tests/application/frontend/TargetEmotionSelectorControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/application/frontend/SectionParameterContainer.java" />
+        <option value="$PROJECT_DIR$/src/application/frontend/MainWindowController.java" />
+        <option value="$PROJECT_DIR$/src/tests/application/frontend/MainWindowControllerTest.java" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="56" />
+    <option name="y" value="36" />
+    <option name="width" value="1612" />
+    <option name="height" value="876" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Narrative Music Generator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Narrative Music Generator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Narrative Music Generator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Narrative Music Generator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Narrative Music Generator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Narrative Music Generator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Narrative Music Generator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Narrative Music Generator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Narrative Music Generator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Narrative Music Generator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Narrative Music Generator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Narrative Music Generator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Narrative Music Generator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Narrative Music Generator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="out" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="OverrideImplement.combined" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="recentsLimit" value="5" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="dynamic.classpath" value="false" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="ChangesBrowser.SHOW_FLATTEN" value="false" />
+    <property name="settings.editor.selected.configurable" value="coverage" />
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="Downloaded.Files.Path.Enabled" value="true" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="SONARLINT_ANALYSIS_RESULTS_SCOPE" value="VCS changed files" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="application.frontend" />
+      <recent name="application" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="application.highbackend" />
+      <recent name="application.lowbackend" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+      <recent name="groovy.util.GroovyTestCase" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/application/front_end" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.All tests">
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">
+      <module name="" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <Java />
+      <Profilers>
+        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
+        <option name="GAPID_ENABLED" value="false" />
+        <option name="GAPID_DISABLE_PCS" value="false" />
+        <option name="SUPPORT_LIB_ENABLED" value="true" />
+        <option name="INSTRUMENTATION_ENABLED" value="true" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="EXTRA_OPTIONS" value="" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <Java />
+      <Profilers>
+        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
+        <option name="GAPID_ENABLED" value="false" />
+        <option name="GAPID_DISABLE_PCS" value="false" />
+        <option name="SUPPORT_LIB_ENABLED" value="true" />
+        <option name="INSTRUMENTATION_ENABLED" value="true" />
+      </Profilers>
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Java Scratch" factoryName="Java Scratch">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SCRATCH_FILE_ID" value="0" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Narrative Music Generator" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="false" name="Main" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="application.frontend.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="application.frontend.Main" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Narrative Music Generator" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="All tests" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="application.frontend.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="application" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="wholeProject" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Application.Main" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.All tests" />
+    </list>
+    <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
+      <Host>localhost</Host>
+      <Port>5050</Port>
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="" />
+      <created>1359379246138</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1359379246138</updated>
+      <workItem from="1359379250712" duration="1302000" />
+    </task>
+    <task id="LOCAL-00001" summary="Create project">
+      <created>1516622204291</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1516622204291</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Add ChordTransitionMatrix class&#10;Add Chord selector to select chord based on probabilities in transitionmatrix">
+      <created>1516978511319</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1516978511319</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Add Transition Matrix Filters">
+      <created>1517099388489</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1517099388489</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Add Sprint 1 Tests">
+      <created>1517259398912</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1517259398912</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Add Music Generator&#10;Add Music Generator Tests&#10;Add Valence-Arousal Model and Parameter Mappings&#10;Add Valence-Arousal Model and Parameter Mappings Tests">
+      <created>1517854619188</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1517854619188</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Add 'Section' and 'Composition'">
+      <created>1518217020764</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1518217020764</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Add 'Section' and 'Composition' tests&#10;Add Velocity functionality">
+      <created>1518277719952</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1518277719952</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Add transitioning between sections functionality&#10;Change all chords to have four notes to fix bug where start times wouldn't work sometimes due to chords having a different number of notes">
+      <created>1518919165208</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1518919165208</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Add TransitionHelper Tests">
+      <created>1518922258689</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1518922258689</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Add main window GUI&#10;Add basic target emotion selector GUI&#10;Connect target emotion selector to main window GUI&#10;Connect composition controls to underlying system&#10;Add GenerateComposition button functionality">
+      <created>1519677692399</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1519677692399</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Add circumplex model and functionality to target emotion selector&#10;Add ResetComposition button functionality">
+      <created>1520079655037</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1520079655037</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Add full playback functionality&#10;Add export to midi functionality">
+      <created>1520176432292</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1520176432292</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Refactor entire codebase&#10;Add MusicGeneratorTest">
+      <created>1520607437468</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1520607437468</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Add help text&#10;Add error logging">
+      <created>1520721227722</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1520721227722</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Add Front-end Tests">
+      <created>1520790911568</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1520790911568</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="All_tests - 2018.03.11 at 17h 45m 33s.xml">
+      <configuration name="All tests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_tests - 2018.03.11 at 17h 49m 10s.xml">
+      <configuration name="All tests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_tests - 2018.03.11 at 17h 54m 41s.xml">
+      <configuration name="All tests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_tests - 2018.03.11 at 18h 00m 51s.xml">
+      <configuration name="All tests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_tests - 2018.03.11 at 18h 07m 13s.xml">
+      <configuration name="All tests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TargetEmotionSelectorControllerTest_clickingOnValenceArousalModelChangesCrosshairPosition - 2018.03.11 at 17h 48m 24s.xml">
+      <configuration name="TargetEmotionSelectorControllerTest.clickingOnValenceArousalModelChangesCrosshairPosition" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TargetEmotionSelectorControllerTest_crosshairPositionIsSetCorrectlyOnInitialisation - 2018.03.11 at 17h 37m 50s.xml">
+      <configuration name="TargetEmotionSelectorControllerTest.crosshairPositionIsSetCorrectlyOnInitialisation" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TargetEmotionSelectorControllerTest_crosshairPositionIsSetCorrectlyOnInitialisation - 2018.03.11 at 17h 38m 03s.xml">
+      <configuration name="TargetEmotionSelectorControllerTest.crosshairPositionIsSetCorrectlyOnInitialisation" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TargetEmotionSelectorControllerTest_test - 2018.03.11 at 17h 42m 51s.xml">
+      <configuration name="TargetEmotionSelectorControllerTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TargetEmotionSelectorControllerTest_test - 2018.03.11 at 17h 43m 06s.xml">
+      <configuration name="TargetEmotionSelectorControllerTest.test" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1302000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="56" y="36" width="1612" height="876" extended-state="0" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32961586" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32961586" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32961586" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24937965" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="SonarLint" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32961586" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39900866" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32961586" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32940447" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
+      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32961586" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Create project" />
+    <MESSAGE value="Add ChordTransitionMatrix class&#10;Add Chord selector to select chord based on probabilities in transitionmatrix" />
+    <MESSAGE value="Add Transition Matrix Filters" />
+    <MESSAGE value="Add Sprint 1 Tests" />
+    <MESSAGE value="Add Music Generator&#10;Add Music Generator Tests&#10;Add Valence-Arousal Model and Parameter Mappings&#10;Add Valence-Arousal Model and Parameter Mappings Tests" />
+    <MESSAGE value="Add 'Section' and 'Composition'" />
+    <MESSAGE value="Add 'Section' and 'Composition' tests&#10;Add Velocity functionality" />
+    <MESSAGE value="Add transitioning between sections functionality&#10;Change all chords to have four notes to fix bug where start times wouldn't work sometimes due to chords having a different number of notes" />
+    <MESSAGE value="Add TransitionHelper Tests" />
+    <MESSAGE value="Add main window GUI&#10;Add basic target emotion selector GUI&#10;Connect target emotion selector to main window GUI&#10;Connect composition controls to underlying system&#10;Add GenerateComposition button functionality" />
+    <MESSAGE value="Add circumplex model and functionality to target emotion selector&#10;Add ResetComposition button functionality" />
+    <MESSAGE value="Add full playback functionality&#10;Add export to midi functionality" />
+    <MESSAGE value="Refactor entire codebase" />
+    <MESSAGE value="Refactor entire codebase&#10;Add MusicGeneratorTest" />
+    <MESSAGE value="Add help text&#10;Add error logging" />
+    <MESSAGE value="Add Front-end Tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Front-end Tests" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="12" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/application/frontend/MainWindowController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1875">
+          <caret line="231" column="38" lean-forward="false" selection-start-line="231" selection-start-column="12" selection-end-line="231" selection-end-column="38" />
+          <folding>
+            <element signature="method#formatTransitionLength#0;class#MainWindowController#0" expanded="false" />
+            <element signature="method#handleSectionListAction#0;class#MainWindowController#0" expanded="false" />
+            <element signature="method#handleSectionDurationMinutesTextFocus#0;class#MainWindowController#0" expanded="false" />
+            <element signature="method#handleSectionDurationSecondsTextFocus#0;class#MainWindowController#0" expanded="false" />
+            <element signature="method#handleTransitionLengthTextFocus#0;class#MainWindowController#0" expanded="false" />
+            <element signature="method#resetParametersText#0;class#MainWindowController#0" expanded="false" />
+            <element signature="method#updateTransitionLengthArea#0;class#MainWindowController#0" expanded="false" />
+            <element signature="method#updateParametersText#0;class#MainWindowController#0" expanded="false" />
+            <element signature="method#handleGenerateCompositionButton#0;class#MainWindowController#0" expanded="false" />
+            <element signature="method#setupPlayback#0;class#MainWindowController#0" expanded="false" />
+            <element signature="method#setupSequencer#0;class#MainWindowController#0" expanded="false" />
+            <element signature="method#stopComposition#0;class#MainWindowController#0" expanded="false" />
+            <element signature="method#handlePlayCompositionButton#0;class#MainWindowController#0" expanded="false" />
+            <element signature="method#openTargetEmotionSelector#0;class#MainWindowController#0" expanded="false" />
+            <element signature="method#calculateTransitionLengthInSeconds#0;class#MainWindowController#0" expanded="false" />
+            <element signature="method#updateTransitionDurationInTimeText#0;class#MainWindowController#0" expanded="false" />
+            <element signature="method#updateTotalCompositionDurationText#0;class#MainWindowController#0" expanded="false" />
+            <element signature="method#handleResetCompositionButton#0;class#MainWindowController#0" expanded="false" />
+            <element signature="method#setValenceAndArousal#0;class#MainWindowController#0" expanded="false" />
+            <element signature="method#setSeekBarValue#0;class#MainWindowController#0" expanded="false" />
+            <element signature="method#handleExportToMidiButton#0;class#MainWindowController#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/highbackend/TransitionHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="31" column="4" lean-forward="false" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/frontend/TargetEmotionSelectorController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="960">
+          <caret line="78" column="18" lean-forward="false" selection-start-line="78" selection-start-column="17" selection-end-line="78" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/highbackend/Section.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="855">
+          <caret line="63" column="4" lean-forward="false" selection-start-line="63" selection-start-column="4" selection-end-line="63" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/lowbackend/TransitionMatrixGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="43" column="4" lean-forward="false" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/frontend/MainWindowController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="35" column="20" lean-forward="false" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
+          <folding>
+            <element signature="method#formatTransitionLength#0;class#MainWindowController#0" expanded="false" />
+            <element signature="method#handleSectionListAction#0;class#MainWindowController#0" expanded="false" />
+            <element signature="method#handleSectionDurationMinutesTextFocus#0;class#MainWindowController#0" expanded="false" />
+            <element signature="method#handleSectionDurationSecondsTextFocus#0;class#MainWindowController#0" expanded="false" />
+            <element signature="method#handleTransitionLengthTextFocus#0;class#MainWindowController#0" expanded="false" />
+            <element signature="method#resetParametersText#0;class#MainWindowController#0" expanded="false" />
+            <element signature="method#updateTransitionLengthArea#0;class#MainWindowController#0" expanded="false" />
+            <element signature="method#updateParametersText#0;class#MainWindowController#0" expanded="false" />
+            <element signature="method#handleGenerateCompositionButton#0;class#MainWindowController#0" expanded="false" />
+            <element signature="method#setupPlayback#0;class#MainWindowController#0" expanded="false" />
+            <element signature="method#setupSequencer#0;class#MainWindowController#0" expanded="false" />
+            <element signature="method#stopComposition#0;class#MainWindowController#0" expanded="false" />
+            <element signature="method#handlePlayCompositionButton#0;class#MainWindowController#0" expanded="false" />
+            <element signature="method#openTargetEmotionSelector#0;class#MainWindowController#0" expanded="false" />
+            <element signature="method#calculateTransitionLengthInSeconds#0;class#MainWindowController#0" expanded="false" />
+            <element signature="method#updateTransitionDurationInTimeText#0;class#MainWindowController#0" expanded="false" />
+            <element signature="method#updateTotalCompositionDurationText#0;class#MainWindowController#0" expanded="false" />
+            <element signature="method#handleResetCompositionButton#0;class#MainWindowController#0" expanded="false" />
+            <element signature="method#setValenceAndArousal#0;class#MainWindowController#0" expanded="false" />
+            <element signature="method#setSeekBarValue#0;class#MainWindowController#0" expanded="false" />
+            <element signature="method#handleExportToMidiButton#0;class#MainWindowController#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tests/application/frontend/MainWindowControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/frontend/SectionParameterContainer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1440">
+          <caret line="114" column="4" lean-forward="false" selection-start-line="114" selection-start-column="4" selection-end-line="114" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/frontend/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="24" column="21" lean-forward="true" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/frontend/main_window_controller.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="33" lean-forward="false" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tests/application/lowbackend/MusicGeneratorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="13" column="11" lean-forward="false" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/lowbackend/ChordGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/javafx-src.zip!/com/sun/javafx/tk/quantum/GlassViewEventHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="414" column="0" lean-forward="false" selection-start-line="414" selection-start-column="0" selection-end-line="414" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/javafx-src.zip!/javafx/scene/Scene.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8616">
+          <caret line="3756" column="0" lean-forward="false" selection-start-line="3756" selection-start-column="0" selection-end-line="3756" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tests/application/TransitionMatrixFilterTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/application/frontend/target-emotion-selector.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/highbackend/Composition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="39" lean-forward="true" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/lowbackend/ValenceArousalModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="56" column="44" lean-forward="true" selection-start-line="56" selection-start-column="44" selection-end-line="56" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tests/application/lowbackend/ChordGeneratorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="20" column="40" lean-forward="true" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tests/application/lowbackend/ChordsFilterTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-495">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tests/application/lowbackend/ChordTransitionMatrixTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tests/application/lowbackend/ValenceArousalModelTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tests/application/highbackend/TransitionHelperTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tests/application/lowbackend/DiatonicFilterTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-126">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tests/application/lowbackend/TonalityFilterTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-227">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tests/application/lowbackend/ChordSelectorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/Consts.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1206">
+          <caret line="5" column="5" lean-forward="true" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/lowbackend/MusicGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1344">
+          <caret line="120" column="0" lean-forward="true" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tests/application/highbackend/CompositionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="41" column="8" lean-forward="true" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tests/application/highbackend/SectionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tests/application/lowbackend/TransitionMatrixGeneratorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="8" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="13" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/lowbackend/TransitionMatrixFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="4" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/lowbackend/ChordsFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="58" column="4" lean-forward="false" selection-start-line="58" selection-start-column="4" selection-end-line="58" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/lowbackend/ChordGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="37" column="4" lean-forward="false" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/lowbackend/ChordSelector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="4" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/lowbackend/DiatonicFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="4" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/lowbackend/TonalityFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-246">
+          <caret line="57" column="4" lean-forward="false" selection-start-line="57" selection-start-column="4" selection-end-line="57" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/lowbackend/ChordTransitionMatrix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="4" lean-forward="false" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/highbackend/TransitionHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="31" column="4" lean-forward="false" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/highbackend/Section.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="855">
+          <caret line="63" column="4" lean-forward="false" selection-start-line="63" selection-start-column="4" selection-end-line="63" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/lowbackend/TransitionMatrixGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="43" column="4" lean-forward="false" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tests/application/frontend/MainTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/application/frontend/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="24" column="21" lean-forward="false" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/frontend/main_window_controller.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="33" lean-forward="false" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tests/application/lowbackend/MusicGeneratorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="13" column="11" lean-forward="false" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tests/application/frontend/SectionParameterContainerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="94" lean-forward="false" selection-start-line="9" selection-start-column="94" selection-end-line="9" selection-end-column="94" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/frontend/TargetEmotionSelectorController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="23" column="18" lean-forward="false" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tests/application/frontend/TargetEmotionSelectorControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1275">
+          <caret line="87" column="24" lean-forward="true" selection-start-line="87" selection-start-column="24" selection-end-line="87" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/frontend/SectionParameterContainer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="39">
+          <caret line="89" column="5" lean-forward="true" selection-start-line="89" selection-start-column="5" selection-end-line="89" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tests/application/frontend/MainWindowControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="63" column="34" lean-forward="true" selection-start-line="63" selection-start-column="34" selection-end-line="63" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/frontend/MainWindowController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="171" column="47" lean-forward="true" selection-start-line="171" selection-start-column="47" selection-end-line="171" selection-end-column="47" />
+          <folding>
+            <element signature="method#formatTransitionLength#0;class#MainWindowController#0" expanded="false" />
+            <element signature="method#handleSectionListAction#0;class#MainWindowController#0" expanded="false" />
+            <element signature="method#handleSectionDurationMinutesTextFocus#0;class#MainWindowController#0" expanded="false" />
+            <element signature="method#handleSectionDurationSecondsTextFocus#0;class#MainWindowController#0" expanded="false" />
+            <element signature="method#handleTransitionLengthTextFocus#0;class#MainWindowController#0" expanded="false" />
+            <element signature="method#resetParametersText#0;class#MainWindowController#0" expanded="false" />
+            <element signature="method#updateTransitionLengthArea#0;class#MainWindowController#0" expanded="false" />
+            <element signature="method#updateParametersText#0;class#MainWindowController#0" expanded="false" />
+            <element signature="method#handleGenerateCompositionButton#0;class#MainWindowController#0" expanded="false" />
+            <element signature="method#setupPlayback#0;class#MainWindowController#0" expanded="false" />
+            <element signature="method#setupSequencer#0;class#MainWindowController#0" expanded="false" />
+            <element signature="method#stopComposition#0;class#MainWindowController#0" expanded="false" />
+            <element signature="method#handlePlayCompositionButton#0;class#MainWindowController#0" expanded="false" />
+            <element signature="method#openTargetEmotionSelector#0;class#MainWindowController#0" expanded="false" />
+            <element signature="method#calculateTransitionLengthInSeconds#0;class#MainWindowController#0" expanded="false" />
+            <element signature="method#updateTransitionDurationInTimeText#0;class#MainWindowController#0" expanded="false" />
+            <element signature="method#updateTotalCompositionDurationText#0;class#MainWindowController#0" expanded="false" />
+            <element signature="method#handleResetCompositionButton#0;class#MainWindowController#0" expanded="false" />
+            <element signature="method#setValenceAndArousal#0;class#MainWindowController#0" expanded="false" />
+            <element signature="method#setSeekBarValue#0;class#MainWindowController#0" expanded="false" />
+            <element signature="method#handleExportToMidiButton#0;class#MainWindowController#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>Narrative Music Generator:jar</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Narrative Music Generator</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>org.testfx:testfx-junit:4.0.12-alpha</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

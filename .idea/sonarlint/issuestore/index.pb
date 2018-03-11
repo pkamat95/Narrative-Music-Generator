@@ -65,3 +65,7 @@ b
 2src/application/frontend/MainWindowController.java,8/5/85729ff3b35753b01cbde43d8a45177f28979b24
 l
 <src/tests/application/frontend/MainWindowControllerTest.java,6/3/630e6cf8d146f19ddca051717f59a6c6d7fc8794
+M
+Narrative Music Generator.iml,9/c/9c1f10662fbe39c94a9adef803a8a8a059fad7a4
+S
+#.idea/sonarlint/issuestore/index.pb,9/f/9fe84ebb15faf917b7def6236dba604453cc61e0
