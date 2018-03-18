@@ -30,7 +30,7 @@ public class Main extends Application {
         });
 
         // start main window
-        primaryStage.setTitle("NMGS");
+        primaryStage.setTitle("NMGS 1.0");
         primaryStage.setScene(new Scene(root, 600, 300));
         primaryStage.setResizable(false);
         primaryStage.show();

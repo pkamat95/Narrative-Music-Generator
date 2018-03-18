@@ -390,13 +390,13 @@ public class MainWindowController implements Initializable {
                 isEnd = (i == sectionList.size() - 1);
 
                 sections[i] = new Section(parameters, key, sectionLength, isStart, isEnd, startTransitionLength, endTransitionLength);
-
-                Composition comp = new Composition(sections);
-                comp.generateComposition();
-
-                this.composition = comp.getScore();
-                Write.midi(this.composition, TEMP_MIDI_FILE);
             }
+
+            Composition comp = new Composition(sections);
+            comp.generateComposition();
+
+            this.composition = comp.getScore();
+            Write.midi(this.composition, TEMP_MIDI_FILE);
 
             helpText.setText("Composition has been generated and loaded for playback.");
             setupPlayback();

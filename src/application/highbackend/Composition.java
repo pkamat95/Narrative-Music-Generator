@@ -42,8 +42,10 @@ public class Composition {
             // calculate startTimeAdjustment for transition
             timeAdjustment = PHRASE_DURATION - (PHRASE_DURATION * (60/sections[i].getTempo()));
 
+            boolean isNotLast = (i != sections.length - 1);
             // Add transition section to score
-            if (i != sections.length - 1) { // generate transition unless we're on the last section
+            if (isNotLast) { // generate transition unless we're on the last section
+                System.out.println(i);
                 transitionLength = sections[i].getEndTransitionLength() + sections[i+1].getStartTransitionLength();
                 for (j = 0; j < transitionLength; j++) {
                     transitionHelper.interpolateParameters(sections[i].getParameters(), sections[i+1].getParameters(), j, transitionLength);

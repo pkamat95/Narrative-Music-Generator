@@ -6,101 +6,22 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Update lib directory">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/3/1349082b048010b3820e024b6e2e0b3c56b0a095" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/9/199ee3490564eedf90fe6fd2f60eef8b2ba06f9d" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/b/1b13cad6ef4a23a8bbec970170c7e695048864b7" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/1/21919613412fb00b74d5ea53c115f87af3315546" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/b/2bf62161eec4d30db808431cae260468bea02fa5" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/f/2fbe8ee40174a0cc3ca69a52f8527dd62cf07484" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/7/37ab94345d5a815daadb9a7d1998c6feeb7a2ff1" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/a/4a9683171a0e24aa39c20f66ccb076dfc0886fe9" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/e/5e1a5b393c629047b6e653bd94419d2a5e719f7e" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/3/630e6cf8d146f19ddca051717f59a6c6d7fc8794" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/c/6c91a9589a347da84440f122df2db185ad70e93b" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/0/708289102eb48bc1ebdc3548ab3ce0141b0385a1" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/5/753950dac586aeda950bb025cc175de0c4731cfe" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/f/7fb523e12098eebe18f297a264ece4839a6e40cc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/5/85729ff3b35753b01cbde43d8a45177f28979b24" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/b/8bc30b8f50a7a9e52a378bb0e1823e0293b31b1f" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/d/8dfc011d59fe18f04ae529b6f6cd53791d9cd93e" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/2/9237b67ffca9e85d568d8b65fc75d88b777f3af3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/3/938bee2c77386e04b4b30067ac5bffcf3b1b84a2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/c/9c1f10662fbe39c94a9adef803a8a8a059fad7a4" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/f/9fe84ebb15faf917b7def6236dba604453cc61e0" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/1/a11524b4df41e568b3c4fd50f7a8bffdc6da5c6f" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/7/a77f9bbb2b836f7e5030c3c39b67ef0f559c01cd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/9/a96538bb0e2734495ab3bc5191ec27517ecd0af0" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/e/ae975936dfd3f4be3d6088bf55efcadfe55a1dcc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/f/afbada960760fc957cc8a074aae8e0eb9397de5d" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/3/b35440c7d050f58b6407e6fe4df441f2e515225e" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/a/bae04a860ef67877acdfb030449b06248d98bea6" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/e/bebfd52568097bed4cdc833677253d564edc2450" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/0/d07feff0023cdf674334569b36f538f7918956e9" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/2/e2ec405acda28c9efea673dea1faf30550198a27" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/5/e573d90003c8bf9ad51c37958644cc5bcc96c12f" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/b/ebd28f84a036212f32528b61906a079f57da12b9" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/3/f368b514346f05bee1abe37f4e0c493db6a64b44" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/composition.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/assertj-core-3.9.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/testfx-core-4.0.12-alpha.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/testfx-internal-java8-4.0.12-alpha.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/testfx-junit-4.0.12-alpha.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Narrative_Music_Generator_jar.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Narrative_Music_Generator_jar/Narrative Music Generator.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Narrative Music Generator/application/Consts.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Narrative Music Generator/application/frontend/Main$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Narrative Music Generator/application/frontend/Main.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Narrative Music Generator/application/frontend/MainWindowController$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Narrative Music Generator/application/frontend/MainWindowController$2$1$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Narrative Music Generator/application/frontend/MainWindowController$2$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Narrative Music Generator/application/frontend/MainWindowController$2$2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Narrative Music Generator/application/frontend/MainWindowController$2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Narrative Music Generator/application/frontend/MainWindowController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Narrative Music Generator/application/frontend/SectionParameterContainer.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Narrative Music Generator/application/frontend/TargetEmotionSelectorController$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Narrative Music Generator/application/frontend/TargetEmotionSelectorController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Narrative Music Generator/application/highbackend/Composition.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Narrative Music Generator/application/highbackend/Section.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Narrative Music Generator/application/highbackend/TransitionHelper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Narrative Music Generator/application/lowbackend/ChordGenerator.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Narrative Music Generator/application/lowbackend/ChordSelector.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Narrative Music Generator/application/lowbackend/ChordTransitionMatrix.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Narrative Music Generator/application/lowbackend/ChordsFilter$DiminishedChordsFilter.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Narrative Music Generator/application/lowbackend/ChordsFilter$DominantChordsFilter.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Narrative Music Generator/application/lowbackend/ChordsFilter$MajorChordsFilter.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Narrative Music Generator/application/lowbackend/ChordsFilter$MinorChordsFilter.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Narrative Music Generator/application/lowbackend/ChordsFilter.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Narrative Music Generator/application/lowbackend/DiatonicFilter.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Narrative Music Generator/application/lowbackend/MusicGenerator.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Narrative Music Generator/application/lowbackend/TonalityFilter.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Narrative Music Generator/application/lowbackend/TransitionMatrixFilter.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Narrative Music Generator/application/lowbackend/TransitionMatrixGenerator.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Narrative Music Generator/application/lowbackend/ValenceArousalModel.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/test/Narrative Music Generator/application/frontend/MainWindowControllerTest.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/test/Narrative Music Generator/application/frontend/SectionParameterContainerTest.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/test/Narrative Music Generator/application/frontend/TargetEmotionSelectorControllerTest.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/test/Narrative Music Generator/application/highbackend/CompositionTest.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/test/Narrative Music Generator/application/highbackend/SectionTest.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/test/Narrative Music Generator/application/highbackend/TransitionHelperTest.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/test/Narrative Music Generator/application/lowbackend/ChordGeneratorTest.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/test/Narrative Music Generator/application/lowbackend/ChordSelectorTest.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/test/Narrative Music Generator/application/lowbackend/ChordTransitionMatrixTest.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/test/Narrative Music Generator/application/lowbackend/ChordsFilterTest.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/test/Narrative Music Generator/application/lowbackend/DiatonicFilterTest.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/test/Narrative Music Generator/application/lowbackend/MusicGeneratorTest.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/test/Narrative Music Generator/application/lowbackend/TonalityFilterTest.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/test/Narrative Music Generator/application/lowbackend/TransitionMatrixGeneratorTest.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/test/Narrative Music Generator/application/lowbackend/ValenceArousalModelTest.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/Narrative_Music_Generator_jar.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Narrative Music Generator/META-INF/MANIFEST.MF" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Narrative Music Generator/application/frontend/main_window_controller.fxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Narrative Music Generator/application/frontend/target-emotion-selector.fxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Narrative_Music_Generator_jar.zip" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/5/85729ff3b35753b01cbde43d8a45177f28979b24" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/5/85729ff3b35753b01cbde43d8a45177f28979b24" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/e/ae975936dfd3f4be3d6088bf55efcadfe55a1dcc" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/e/ae975936dfd3f4be3d6088bf55efcadfe55a1dcc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composition.mid" afterPath="$PROJECT_DIR$/composition.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Narrative_Music_Generator_jar/Narrative Music Generator.jar" afterPath="$PROJECT_DIR$/out/artifacts/Narrative_Music_Generator_jar/Narrative Music Generator.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Narrative Music Generator/application/frontend/Main.class" afterPath="$PROJECT_DIR$/out/production/Narrative Music Generator/application/frontend/Main.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Narrative Music Generator/application/frontend/MainWindowController.class" afterPath="$PROJECT_DIR$/out/production/Narrative Music Generator/application/frontend/MainWindowController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Narrative Music Generator/application/highbackend/Composition.class" afterPath="$PROJECT_DIR$/out/production/Narrative Music Generator/application/highbackend/Composition.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Narrative Music Generator/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/out/production/Narrative Music Generator/META-INF/MANIFEST.MF" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/application/frontend/Main.java" afterPath="$PROJECT_DIR$/src/application/frontend/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/application/frontend/MainWindowController.java" afterPath="$PROJECT_DIR$/src/application/frontend/MainWindowController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tests/application/frontend/MainWindowControllerTest.java" afterPath="$PROJECT_DIR$/src/tests/application/frontend/MainWindowControllerTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/application/highbackend/Composition.java" afterPath="$PROJECT_DIR$/src/application/highbackend/Composition.java" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -166,7 +87,72 @@
     <favorites_list name="JavaFxApplication" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/application/frontend/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainWindowController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/application/frontend/MainWindowController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="366" column="0" lean-forward="false" selection-start-line="366" selection-start-column="0" selection-end-line="366" selection-end-column="0" />
+              <folding>
+                <element signature="method#formatTransitionLength#0;class#MainWindowController#0" expanded="false" />
+                <element signature="method#handleSectionListAction#0;class#MainWindowController#0" expanded="false" />
+                <element signature="method#handleSectionDurationMinutesTextFocus#0;class#MainWindowController#0" expanded="false" />
+                <element signature="method#handleSectionDurationSecondsTextFocus#0;class#MainWindowController#0" expanded="false" />
+                <element signature="method#handleTransitionLengthTextFocus#0;class#MainWindowController#0" expanded="false" />
+                <element signature="method#resetParametersText#0;class#MainWindowController#0" expanded="false" />
+                <element signature="method#updateTransitionLengthArea#0;class#MainWindowController#0" expanded="false" />
+                <element signature="method#updateParametersText#0;class#MainWindowController#0" expanded="false" />
+                <element signature="method#setupPlayback#0;class#MainWindowController#0" expanded="false" />
+                <element signature="method#setupSequencer#0;class#MainWindowController#0" expanded="false" />
+                <element signature="method#stopComposition#0;class#MainWindowController#0" expanded="false" />
+                <element signature="method#handlePlayCompositionButton#0;class#MainWindowController#0" expanded="false" />
+                <element signature="method#openTargetEmotionSelector#0;class#MainWindowController#0" expanded="false" />
+                <element signature="method#calculateTransitionLengthInSeconds#0;class#MainWindowController#0" expanded="false" />
+                <element signature="method#updateTransitionDurationInTimeText#0;class#MainWindowController#0" expanded="false" />
+                <element signature="method#updateTotalCompositionDurationText#0;class#MainWindowController#0" expanded="false" />
+                <element signature="method#handleResetCompositionButton#0;class#MainWindowController#0" expanded="false" />
+                <element signature="method#setValenceAndArousal#0;class#MainWindowController#0" expanded="false" />
+                <element signature="method#setSeekBarValue#0;class#MainWindowController#0" expanded="false" />
+                <element signature="method#handleExportToMidiButton#0;class#MainWindowController#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Composition.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/application/highbackend/Composition.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="645">
+              <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Section.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/application/highbackend/Section.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="915">
+              <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+              <folding>
+                <element signature="e#2322#2323#0" expanded="true" />
+                <element signature="e#2358#2359#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -228,12 +214,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/application/high_back_end/TransitionHelper.java" />
         <option value="$PROJECT_DIR$/src/application/TransitionMatrixFilter.java" />
         <option value="$PROJECT_DIR$/src/application/low_back_end/TransitionMatrixFilter.java" />
         <option value="$PROJECT_DIR$/src/application/low_back_end/TransitionMatrixGenerator.java" />
         <option value="$PROJECT_DIR$/src/application/low_back_end/ValenceArousalModel.java" />
-        <option value="$PROJECT_DIR$/src/application/highbackend/Composition.java" />
         <option value="$PROJECT_DIR$/src/application/lowbackend/MusicGenerator.java" />
         <option value="$PROJECT_DIR$/src/application/lowbackend/ValenceArousalModel.java" />
         <option value="$PROJECT_DIR$/src/tests/application/ChordSelectorTest.java" />
@@ -277,8 +261,10 @@
         <option value="$PROJECT_DIR$/src/application/frontend/TargetEmotionSelectorController.java" />
         <option value="$PROJECT_DIR$/src/tests/application/frontend/TargetEmotionSelectorControllerTest.java" />
         <option value="$PROJECT_DIR$/src/application/frontend/SectionParameterContainer.java" />
-        <option value="$PROJECT_DIR$/src/application/frontend/MainWindowController.java" />
         <option value="$PROJECT_DIR$/src/tests/application/frontend/MainWindowControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/application/frontend/Main.java" />
+        <option value="$PROJECT_DIR$/src/application/highbackend/Composition.java" />
+        <option value="$PROJECT_DIR$/src/application/frontend/MainWindowController.java" />
       </list>
     </option>
   </component>
@@ -309,7 +295,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -420,6 +405,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="highbackend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Narrative Music Generator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Narrative Music Generator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="frontend" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -441,6 +448,7 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -483,7 +491,7 @@
       <recent name="$PROJECT_DIR$/src/application/front_end" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All tests">
+  <component name="RunManager" selected="Application.Main">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
@@ -863,13 +871,17 @@
       <option name="project" value="LOCAL" />
       <updated>1520790911568</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Add whole project directory">
+      <created>1520792561896</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1520792561896</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_tests - 2018.03.11 at 17h 45m 33s.xml">
-      <configuration name="All tests" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="All_tests - 2018.03.11 at 17h 49m 10s.xml">
       <configuration name="All tests" configurationId="JUnit" />
     </history-entry>
@@ -880,6 +892,9 @@
       <configuration name="All tests" configurationId="JUnit" />
     </history-entry>
     <history-entry file="All_tests - 2018.03.11 at 18h 07m 13s.xml">
+      <configuration name="All tests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_tests - 2018.03.16 at 12h 34m 24s.xml">
       <configuration name="All tests" configurationId="JUnit" />
     </history-entry>
     <history-entry file="TargetEmotionSelectorControllerTest_clickingOnValenceArousalModelChangesCrosshairPosition - 2018.03.11 at 17h 48m 24s.xml">
@@ -963,7 +978,8 @@
     <MESSAGE value="Refactor entire codebase&#10;Add MusicGeneratorTest" />
     <MESSAGE value="Add help text&#10;Add error logging" />
     <MESSAGE value="Add Front-end Tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Front-end Tests" />
+    <MESSAGE value="Add whole project directory" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add whole project directory" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -989,7 +1005,6 @@
             <element signature="method#resetParametersText#0;class#MainWindowController#0" expanded="false" />
             <element signature="method#updateTransitionLengthArea#0;class#MainWindowController#0" expanded="false" />
             <element signature="method#updateParametersText#0;class#MainWindowController#0" expanded="false" />
-            <element signature="method#handleGenerateCompositionButton#0;class#MainWindowController#0" expanded="false" />
             <element signature="method#setupPlayback#0;class#MainWindowController#0" expanded="false" />
             <element signature="method#setupSequencer#0;class#MainWindowController#0" expanded="false" />
             <element signature="method#stopComposition#0;class#MainWindowController#0" expanded="false" />
@@ -1048,7 +1063,6 @@
             <element signature="method#resetParametersText#0;class#MainWindowController#0" expanded="false" />
             <element signature="method#updateTransitionLengthArea#0;class#MainWindowController#0" expanded="false" />
             <element signature="method#updateParametersText#0;class#MainWindowController#0" expanded="false" />
-            <element signature="method#handleGenerateCompositionButton#0;class#MainWindowController#0" expanded="false" />
             <element signature="method#setupPlayback#0;class#MainWindowController#0" expanded="false" />
             <element signature="method#setupSequencer#0;class#MainWindowController#0" expanded="false" />
             <element signature="method#stopComposition#0;class#MainWindowController#0" expanded="false" />
@@ -1070,7 +1084,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1140,13 +1154,6 @@
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/highbackend/Composition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="39" lean-forward="true" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/application/lowbackend/ValenceArousalModel.java">
@@ -1304,13 +1311,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/highbackend/Section.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
-          <caret line="63" column="4" lean-forward="false" selection-start-line="63" selection-start-column="4" selection-end-line="63" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/application/lowbackend/TransitionMatrixGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="615">
@@ -1319,14 +1319,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/tests/application/frontend/MainTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/application/frontend/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="24" column="21" lean-forward="false" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/application/frontend/main_window_controller.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -1382,15 +1374,42 @@
         <state relative-caret-position="105">
           <caret line="63" column="34" lean-forward="true" selection-start-line="63" selection-start-column="34" selection-end-line="63" selection-end-column="34" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/highbackend/Section.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="915">
+          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+          <folding>
+            <element signature="e#2322#2323#0" expanded="true" />
+            <element signature="e#2358#2359#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/frontend/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/highbackend/Composition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/application/frontend/MainWindowController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="171" column="47" lean-forward="true" selection-start-line="171" selection-start-column="47" selection-end-line="171" selection-end-column="47" />
+        <state relative-caret-position="15">
+          <caret line="366" column="0" lean-forward="false" selection-start-line="366" selection-start-column="0" selection-end-line="366" selection-end-column="0" />
           <folding>
             <element signature="method#formatTransitionLength#0;class#MainWindowController#0" expanded="false" />
             <element signature="method#handleSectionListAction#0;class#MainWindowController#0" expanded="false" />
@@ -1400,7 +1419,6 @@
             <element signature="method#resetParametersText#0;class#MainWindowController#0" expanded="false" />
             <element signature="method#updateTransitionLengthArea#0;class#MainWindowController#0" expanded="false" />
             <element signature="method#updateParametersText#0;class#MainWindowController#0" expanded="false" />
-            <element signature="method#handleGenerateCompositionButton#0;class#MainWindowController#0" expanded="false" />
             <element signature="method#setupPlayback#0;class#MainWindowController#0" expanded="false" />
             <element signature="method#setupSequencer#0;class#MainWindowController#0" expanded="false" />
             <element signature="method#stopComposition#0;class#MainWindowController#0" expanded="false" />

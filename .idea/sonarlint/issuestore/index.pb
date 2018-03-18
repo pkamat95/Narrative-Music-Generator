@@ -69,3 +69,7 @@ M
 Narrative Music Generator.iml,9/c/9c1f10662fbe39c94a9adef803a8a8a059fad7a4
 S
 #.idea/sonarlint/issuestore/index.pb,9/f/9fe84ebb15faf917b7def6236dba604453cc61e0
+H
+src/META-INF/MANIFEST.MF,e/4/e4b1fd2293ba1e598e6bec4e0ee3b6b6851eb5a2
+a
+1.idea/artifacts/Narrative_Music_Generator_jar.xml,7/c/7cf6a2596f2e781e8a8265a6e56cb63905016456
