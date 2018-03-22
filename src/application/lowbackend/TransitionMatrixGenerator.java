@@ -2,6 +2,7 @@ package application.lowbackend;
 
 import java.util.Arrays;
 
+// builds up a chord transition matrix
 public class TransitionMatrixGenerator {
     private ChordTransitionMatrix transitionMatrix;
     private boolean[] rowsComplete;
@@ -22,6 +23,8 @@ public class TransitionMatrixGenerator {
         setFilterValues(majorChords, minorChords, diminishedChords, dominantChords, tonality, mode, diatonic);
     }
 
+    // generates a single row in the chord transition matrix using the filters and the filter values provided
+    // for efficiency, a row will only be generated if it has not already been generated
     public double[] generateRow(int rowIndex) {
         // generate row if it hasn't already been generated (apply each filter to the row)
         if (!rowsComplete[rowIndex]) {
@@ -45,7 +48,7 @@ public class TransitionMatrixGenerator {
         return transitionMatrix;
     }
 
-    // used to reset the transition matrix generator
+    // changing filter values will reset the chord transition matrix as it will be invalidated
     public void setFilterValues(double majorChords, double minorChords, double diminishedChords,
                                double dominantChords, double tonality, double mode, double diatonic) {
         transitionMatrix = new ChordTransitionMatrix();

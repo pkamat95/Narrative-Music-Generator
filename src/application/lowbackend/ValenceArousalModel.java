@@ -2,6 +2,7 @@ package application.lowbackend;
 
 import static application.Consts.*;
 
+// generates parameters needed to generate sections/transitions based on valence and arousal
 public class ValenceArousalModel {
     private double valence;
     private double arousal;

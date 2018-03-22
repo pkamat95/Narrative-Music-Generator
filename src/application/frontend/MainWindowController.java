@@ -34,6 +34,7 @@ import static java.lang.Thread.sleep;
 import static jm.constants.Pitches.C4;
 
 public class MainWindowController implements Initializable {
+    // FXML variables
     @FXML private TextField sectionDurationMinutesText;
     @FXML private TextField sectionDurationSecondsText;
     @FXML private TextField transitionLengthText;
@@ -49,32 +50,30 @@ public class MainWindowController implements Initializable {
     @FXML private Text playMaxCompositionDuration;
     @FXML private Text playCurrentCompositionDuration;
 
+    // all other variables
     private final Logger logger = Logger.getLogger("ErrorLogging");
     private Stage primaryStage;
     private ArrayList<SectionParameterContainer> sectionList;
     private ObservableList<String> sectionStringList;
-
     private Score composition = null;
     private Sequencer sequencer;
     private boolean seekBarIsListening = true;
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
+        // initialise sectionList
         sectionList = new ArrayList<>();
-        sectionList.add(new SectionParameterContainer());
+        resetComposition();
 
-        sectionStringList = FXCollections.observableArrayList();
-        sectionStringList.add("Section 1");
-
-        sectionComboBox.setItems(sectionStringList);
-        sectionComboBox.getSelectionModel().selectFirst();
-
+        // set transitionLengthArea to be invisible as there is only one section
         updateTransitionLengthArea(0);
 
+        // set text formatters for text fields
         sectionDurationMinutesText.setTextFormatter(minutesFormatter());
         sectionDurationSecondsText.setTextFormatter(secondsFormatter());
         transitionLengthText.setTextFormatter(transitionDurationFormatter());
 
+        // add listeners to update text fields once user is finished entering text
         sectionDurationMinutesText.focusedProperty().addListener(e ->
                 handleSectionDurationMinutesTextFocus()
         );
@@ -87,8 +86,10 @@ public class MainWindowController implements Initializable {
                 handleTransitionLengthTextFocus()
         );
 
+        // initialise sequencer
         setupSequencer();
 
+        // add listener for seekbar, for users to be able to seek to specific parts in the composition
         seekBar.valueProperty().addListener(new ChangeListener<Number>() {
             @Override
             public void changed(ObservableValue<? extends Number> observable, Number oldValue, Number newValue) {
@@ -127,6 +128,53 @@ public class MainWindowController implements Initializable {
             }
             return null;
         });
+    }
+
+    // update text when focus leaves text field and update value in sectionParameterContainer
+    private void handleSectionDurationMinutesTextFocus() {
+        int index = sectionComboBox.getSelectionModel().getSelectedIndex();
+        if (!sectionDurationMinutesText.getText().isEmpty()) {
+            formatSeconds(sectionDurationSecondsText, sectionDurationMinutesText);
+            int sectionLengthMinutes = Integer.parseInt(sectionDurationMinutesText.getText());
+            sectionList.get(index).setSectionLengthMinutes(sectionLengthMinutes);
+        }
+        else {
+            sectionList.get(index).setSectionLengthMinutes(null);
+        }
+        updateTransitionDurationInTimeText(calculateTransitionLengthInSeconds(index));
+        updateTotalCompositionDurationText();
+    }
+
+    // update text when focus leaves text field and update value in sectionParameterContainer
+    private void handleSectionDurationSecondsTextFocus() {
+        int index = sectionComboBox.getSelectionModel().getSelectedIndex();
+        if (!sectionDurationSecondsText.getText().isEmpty()) {
+            formatSeconds(sectionDurationSecondsText, sectionDurationMinutesText);
+            int sectionLengthSeconds = Integer.parseInt(sectionDurationSecondsText.getText());
+            sectionList.get(index).setSectionLengthSeconds(sectionLengthSeconds);
+        }
+        else {
+            sectionList.get(index).setSectionLengthSeconds(null);
+        }
+        updateTransitionDurationInTimeText(calculateTransitionLengthInSeconds(index));
+        updateTotalCompositionDurationText();
+    }
+
+    // update text when focus leaves text field and update value in sectionParameterContainer
+    private void handleTransitionLengthTextFocus() {
+        int index = sectionComboBox.getSelectionModel().getSelectedIndex();
+        if (!transitionLengthText.getText().isEmpty()) {
+            formatTransitionLength();
+            int transitionLength = Integer.parseInt(transitionLengthText.getText());
+            sectionList.get(index).setEndTransitionLength(transitionLength/2);
+            sectionList.get(index+1).setStartTransitionLength(transitionLength/2);
+        }
+        else {
+            sectionList.get(index).setEndTransitionLength(null);
+            sectionList.get(index+1).setStartTransitionLength(null);
+        }
+        updateTransitionDurationInTimeText(calculateTransitionLengthInSeconds(index));
+        updateTotalCompositionDurationText();
     }
 
     // format seconds to 00 and enforce minimum section duration
@@ -235,50 +283,6 @@ public class MainWindowController implements Initializable {
         }
     }
 
-    private void handleSectionDurationMinutesTextFocus() {
-        int index = sectionComboBox.getSelectionModel().getSelectedIndex();
-        if (!sectionDurationMinutesText.getText().isEmpty()) {
-            formatSeconds(sectionDurationSecondsText, sectionDurationMinutesText);
-            int sectionLengthMinutes = Integer.parseInt(sectionDurationMinutesText.getText());
-            sectionList.get(index).setSectionLengthMinutes(sectionLengthMinutes);
-        }
-        else {
-            sectionList.get(index).setSectionLengthMinutes(null);
-        }
-        updateTransitionDurationInTimeText(calculateTransitionLengthInSeconds(index));
-        updateTotalCompositionDurationText();
-    }
-
-    private void handleSectionDurationSecondsTextFocus() {
-        int index = sectionComboBox.getSelectionModel().getSelectedIndex();
-        if (!sectionDurationSecondsText.getText().isEmpty()) {
-            formatSeconds(sectionDurationSecondsText, sectionDurationMinutesText);
-            int sectionLengthSeconds = Integer.parseInt(sectionDurationSecondsText.getText());
-            sectionList.get(index).setSectionLengthSeconds(sectionLengthSeconds);
-        }
-        else {
-            sectionList.get(index).setSectionLengthSeconds(null);
-        }
-        updateTransitionDurationInTimeText(calculateTransitionLengthInSeconds(index));
-        updateTotalCompositionDurationText();
-    }
-
-    private void handleTransitionLengthTextFocus() {
-        int index = sectionComboBox.getSelectionModel().getSelectedIndex();
-        if (!transitionLengthText.getText().isEmpty()) {
-            formatTransitionLength();
-            int transitionLength = Integer.parseInt(transitionLengthText.getText());
-            sectionList.get(index).setEndTransitionLength(transitionLength/2);
-            sectionList.get(index+1).setStartTransitionLength(transitionLength/2);
-        }
-        else {
-            sectionList.get(index).setEndTransitionLength(null);
-            sectionList.get(index+1).setStartTransitionLength(null);
-        }
-        updateTransitionDurationInTimeText(calculateTransitionLengthInSeconds(index));
-        updateTotalCompositionDurationText();
-    }
-
     private void resetParametersText() {
         sectionDurationMinutesText.clear();
         sectionDurationSecondsText.clear();
@@ -288,7 +292,8 @@ public class MainWindowController implements Initializable {
     }
 
     private void updateTransitionLengthArea(int index) {
-        if (index < sectionList.size() - 1) {
+        boolean isNotLast = (index < sectionList.size() - 1);
+        if (isNotLast) {
             transitionLengthArea.setVisible(true);
         }
         else {
@@ -296,6 +301,7 @@ public class MainWindowController implements Initializable {
         }
     }
 
+    // load all parameters for the section of the given index
     void updateParametersText(int index) {
         SectionParameterContainer section = sectionList.get(index);
 
@@ -316,9 +322,9 @@ public class MainWindowController implements Initializable {
         valenceText.setText(String.format("%.2f", section.getValence()));
         arousalText.setText(String.format("%.2f", section.getArousal()));
 
-        boolean end = (index == sectionList.size() - 1);
+        boolean last = (index == sectionList.size() - 1);
         // update transition length and transition duration in time text
-        if (!end) {
+        if (!last) {
             // update transition length text
             SectionParameterContainer sectionAfter = sectionList.get(index+1);
             if (section.getEndTransitionLength() != null && sectionAfter.getStartTransitionLength() != null) {
@@ -329,7 +335,7 @@ public class MainWindowController implements Initializable {
                 transitionLengthText.clear();
             }
         }
-        else { // not necessary as this area should be disabled, but just in case
+        else { // not necessary as this area should be disabled, but just in case, clear
             transitionLengthText.clear();
         }
 
@@ -337,16 +343,16 @@ public class MainWindowController implements Initializable {
         updateTotalCompositionDurationText();
     }
 
-
     public void handleGenerateCompositionButton() {
         // check if composition is complete
+        // loop through all sections, if any are not complete, return false
         boolean isComplete = true;
         int incompleteSection = 0;
         int i;
         for (i = 0; i < sectionList.size(); i++) {
             if (!sectionList.get(i).isComplete()) {
                 isComplete = false;
-                incompleteSection = i+1;
+                incompleteSection = i+1; // so user can be told which section is incomplete
                 break;
             }
         }
@@ -365,6 +371,7 @@ public class MainWindowController implements Initializable {
             // create a list of sections
             Section[] sections = new Section[sectionList.size()];
 
+            // create each section from the list of section parameter containers
             SectionParameterContainer section;
             double[] parameters;
             boolean isStart;
@@ -375,15 +382,19 @@ public class MainWindowController implements Initializable {
             for (i = 0; i < sectionList.size(); i++) {
                 section = sectionList.get(i);
 
+                // generate parameters using valence arousal model
                 parameters = section.generateParameters();
+                // load tempo separately as it changes depending on duration of section
                 parameters[TEMPO] = section.getTempo();
 
+                // load start and end transition lengths
                 startTransitionLength = section.getStartTransitionLength();
-                startTransitionLength = (startTransitionLength == null) ? 0 : startTransitionLength;
+                startTransitionLength = (section.getStartTransitionLength() == null) ? 0 : startTransitionLength;
 
                 endTransitionLength = section.getEndTransitionLength();
                 endTransitionLength = (endTransitionLength == null) ? 0 : endTransitionLength;
 
+                // calculate section length (as this includes the transitions)
                 sectionLength = section.getSectionLengthInBars() + startTransitionLength + endTransitionLength;
 
                 isStart = (i == 0);
@@ -392,9 +403,11 @@ public class MainWindowController implements Initializable {
                 sections[i] = new Section(parameters, key, sectionLength, isStart, isEnd, startTransitionLength, endTransitionLength);
             }
 
+            // generate composition based on sections
             Composition comp = new Composition(sections);
             comp.generateComposition();
 
+            // save composition as a MIDI file for playback
             this.composition = comp.getScore();
             Write.midi(this.composition, TEMP_MIDI_FILE);
 
@@ -406,6 +419,7 @@ public class MainWindowController implements Initializable {
         }
     }
 
+    // set seekbar max and fill in composition duration next to seekbar
     private void setupPlayback() {
         try{
             Sequence sequence = MidiSystem.getSequence(new File(TEMP_MIDI_FILE));
@@ -420,6 +434,7 @@ public class MainWindowController implements Initializable {
         }
     }
 
+    // initialise and open sequencer, and setup listener for seekbar and for when sequencer ends on it's own
     private void setupSequencer() {
         try {
             sequencer = MidiSystem.getSequencer();
@@ -431,7 +446,7 @@ public class MainWindowController implements Initializable {
 
         sequencer.addMetaEventListener(new MetaEventListener() {
             public void meta(MetaMessage event) {
-                // sequencer started
+                // sequencer started - begin updating seekbar
                 if (event.getType() == 88) {
                     // run on Java FX thread
                     Platform.runLater(new Runnable(){
@@ -449,7 +464,6 @@ public class MainWindowController implements Initializable {
                                         try{
                                             seconds = sequencer.getMicrosecondPosition()/1000000;
 
-                                            // remove listener when setting value
                                             setSeekBarValue(seconds);
 
                                             playCurrentCompositionDuration.setText(
@@ -481,6 +495,7 @@ public class MainWindowController implements Initializable {
         });
     }
 
+    // update UI to show composition has stopped
     private void stopComposition() {
         playButton.setText("Play\nComposition");
         seekBar.setDisable(true);
@@ -489,14 +504,16 @@ public class MainWindowController implements Initializable {
     }
 
     public void handlePlayCompositionButton() {
+        // stop if running
         if (sequencer.isRunning()) {
             sequencer.stop();
             stopComposition();
-
         }
+        // notify user if no composition exists
         else if (composition == null) {
             helpText.setText("Generate composition to use playback features.");
         }
+        // otherwise, load composition and play
         else {
             try {
                 Sequence sequence = MidiSystem.getSequence(new File(TEMP_MIDI_FILE));
@@ -518,9 +535,11 @@ public class MainWindowController implements Initializable {
             Stage stage = new Stage();
             stage.setTitle("Target Emotion Selector");
             stage.setScene(scene);
+            stage.setResizable(false);
 
             TargetEmotionSelectorController targetEmotionSelectorController = fxmlLoader.getController();
 
+            // pass valence and arousal information of current section and section index (so it knows what to update) to controller
             targetEmotionSelectorController.setMainWindowController(this);
             int index = sectionComboBox.getSelectionModel().getSelectedIndex();
             targetEmotionSelectorController.setIndex(index);
@@ -536,15 +555,17 @@ public class MainWindowController implements Initializable {
         }
     }
 
+    // calculates transition length in seconds from transition length in bars
     private Integer calculateTransitionLengthInSeconds(int index) {
         SectionParameterContainer section;
         SectionParameterContainer sectionAfter;
 
-        boolean end = (index == sectionList.size() - 1);
-        if (!end) {
+        boolean last = (index == sectionList.size() - 1);
+        if (!last) {
             section = sectionList.get(index);
             sectionAfter = sectionList.get(index + 1);
         }
+        // return if last section, as there should be no transition to calculate
         else {
             return null;
         }
@@ -558,8 +579,10 @@ public class MainWindowController implements Initializable {
             double transitionLengthInSeconds = 0;
             double tempo;
 
+            // interpolate tempo between section and sectionAfter for each bar in transition
+            // use this to add up total transitionLengthInSeconds
             int i;
-            for (i = 0; i < transitionLength; i++) {
+            for (i = 1; i < transitionLength+1; i++) {
                 tempo = tempoBefore + (difference / transitionLength) * i;
                 transitionLengthInSeconds += (60 / tempo) * 4;
             }
@@ -593,11 +616,11 @@ public class MainWindowController implements Initializable {
         }
 
         if (isComplete) {
-
             int minutes = 0;
             int seconds = 0;
             Integer transitionLength;
             SectionParameterContainer section;
+            // loop through sections and add up sections and add up minutes, seconds and transition lengths
             for (i = 0; i < sectionList.size(); i++) {
                 section = sectionList.get(i);
 
@@ -619,6 +642,12 @@ public class MainWindowController implements Initializable {
     }
 
     public void handleResetCompositionButton() {
+        resetComposition();
+        helpText.setText("All changes have been reset.");
+    }
+
+    // clear section list and add one empty section parameter container
+    private void resetComposition() {
         sectionList.clear();
         sectionList.add(new SectionParameterContainer());
 
@@ -627,8 +656,6 @@ public class MainWindowController implements Initializable {
 
         sectionComboBox.setItems(sectionStringList);
         sectionComboBox.getSelectionModel().selectFirst();
-
-        helpText.setText("All changes have been reset.");
     }
 
     void setValenceAndArousal(double valence, double arousal, int index) {

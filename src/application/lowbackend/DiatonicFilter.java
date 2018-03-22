@@ -2,6 +2,7 @@ package application.lowbackend;
 
 import static application.Consts.*;
 
+// allows scaling of all non-diatonic chords towards 0
 class DiatonicFilter extends TransitionMatrixFilter {
 
     double[] filter(double[] row) {

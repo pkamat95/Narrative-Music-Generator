@@ -2,6 +2,7 @@ package application.frontend;
 
 import application.lowbackend.ValenceArousalModel;
 
+// holds all parameters needed to generate a section
 class SectionParameterContainer {
     private ValenceArousalModel valenceArousalModel = new ValenceArousalModel();
     private Integer sectionLengthMinutes = null;
@@ -73,9 +74,11 @@ class SectionParameterContainer {
     }
 
     double getTempo() {
+        // if new tempo has been calculated, return this
         if (tempo != null) {
             return tempo;
         }
+        // otherwise, return tempo from valence arousal model
         else {
             return valenceArousalModel.generateTempo();
         }
@@ -95,12 +98,12 @@ class SectionParameterContainer {
 
     private void calculateSectionLengthInBarsAndUpdateTempo() {
         if (sectionLengthMinutes != null && sectionLengthSeconds != null) {
-            double rawTempo = valenceArousalModel.generateTempo();
+            double rawTempo = valenceArousalModel.generateTempo(); // tempo before accounting for duration of the section
             double totalMinutes = calculateTotalMinutes();
 
             sectionLengthInBars = (int) Math.round((totalMinutes * rawTempo) / 4);
 
-            // calculate this so that the tempo ensures that the time of the section will be equal to what the user set
+            // calculate new tempo such that it ensures that the time of the section will be equal to what the user set
             tempo = (sectionLengthInBars / totalMinutes) * 4;
         }
         else {

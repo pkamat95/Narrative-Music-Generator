@@ -1,5 +1,6 @@
 package application.lowbackend;
 
+// contains all filters for scaling all types of chords
 class ChordsFilter {
     private MajorChordsFilter majorChordsFilter;
     private MinorChordsFilter minorChordsFilter;

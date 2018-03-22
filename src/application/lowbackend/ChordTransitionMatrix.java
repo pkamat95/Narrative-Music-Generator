@@ -4,6 +4,7 @@ import java.util.Arrays;
 
 import static application.Consts.NUMBER_OF_CHORDS;
 
+// container for the chord transition matrix
 class ChordTransitionMatrix {
     private double[][] matrix;
 

@@ -7,6 +7,7 @@ import jm.music.tools.Mod;
 
 import static application.Consts.*;
 
+// generates a score based on an array of sections
 public class Composition {
     private Section[] sections;
     private Score score;
@@ -18,13 +19,12 @@ public class Composition {
 
     public void generateComposition() {
         score.empty();
-        boolean isStart = true;
 
+        boolean isStart = true;
         double timeAdjustment = 0;
-        int currentChord = I; // could change this starting chord based on mode
+        int currentChord = I; // root major chord - could improve this by adjusting major/minor based on mode
         TransitionHelper transitionHelper = new TransitionHelper(sections[0].getKey());
         int transitionLength;
-
         int i;
         int j;
         int startPoint;
@@ -39,13 +39,12 @@ public class Composition {
                 adjustStartTimes(score.getPartArray(), startPoint, sections[i].getSectionLength(), timeAdjustment);
             }
 
-            // calculate startTimeAdjustment for transition
+            // calculate amount to adjust by for next bar - need to do this when there is a potential tempo change next bar
             timeAdjustment = PHRASE_DURATION - (PHRASE_DURATION * (60/sections[i].getTempo()));
 
             boolean isNotLast = (i != sections.length - 1);
             // Add transition section to score
             if (isNotLast) { // generate transition unless we're on the last section
-                System.out.println(i);
                 transitionLength = sections[i].getEndTransitionLength() + sections[i+1].getStartTransitionLength();
                 for (j = 0; j < transitionLength; j++) {
                     transitionHelper.interpolateParameters(sections[i].getParameters(), sections[i+1].getParameters(), j, transitionLength);
@@ -57,6 +56,7 @@ public class Composition {
                     // need to adjust start times after each chord
                     adjustStartTimes(score.getPartArray(), startPoint, 1, timeAdjustment);
 
+                    // calculate amount to adjust by for next bar
                     timeAdjustment = PHRASE_DURATION - (PHRASE_DURATION * (60/transitionHelper.getTempo()));
                 }
             }
@@ -67,6 +67,9 @@ public class Composition {
         }
     }
 
+    /* this is done as JMusic doesn't automatically adjust start times
+       when there are tempo changes, so without doing this there would be gaps/overlaps in the composition
+       between each section and each bar in the transition */
     private void adjustStartTimes(Part[] parts, int startPoint, int sectionLength, double timeAdjustment) {
         Phrase phrase;
 

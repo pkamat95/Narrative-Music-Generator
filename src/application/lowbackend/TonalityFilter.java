@@ -2,6 +2,7 @@ package application.lowbackend;
 
 import static application.Consts.*;
 
+// allows scaling of tonal chords and scaling of all non tonal chords towards 0
 class TonalityFilter extends TransitionMatrixFilter {
     private double mode = 0.5; // 0 is minor, 1 is major
 

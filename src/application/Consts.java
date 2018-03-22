@@ -1,5 +1,6 @@
 package application;
 
+// container for all constants
 public final class Consts {
     private Consts() {
         throw new IllegalStateException("Consts Class");
@@ -109,4 +110,6 @@ public final class Consts {
     public static final int PHRASE_DURATION = 4;
     public static final int NUMBER_OF_NOTES_IN_CHORD = 4;
     public static final int NUMBER_OF_CHORDS = 48;
+    public static final int MIN_VELOCITY = 40;
+    public static final int MAX_VELOCITY = 70;
 }

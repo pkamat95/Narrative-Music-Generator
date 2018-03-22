@@ -1,5 +1,6 @@
 package application.lowbackend;
 
+// returns the notes contained in a desired chord
 class ChordGenerator {
 
     int[] majorChord(int rootPitch) {
@@ -8,7 +9,7 @@ class ChordGenerator {
         pitchArray[0] = rootPitch;
         pitchArray[1] = rootPitch + 4;
         pitchArray[2] = rootPitch + 7;
-        pitchArray[3] = 0; // note with no sound
+        pitchArray[3] = 0; // note with no sound - added so that all chords have four notes, which is useful in several areas
 
         return pitchArray;
     }

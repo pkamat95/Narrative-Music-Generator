@@ -6,12 +6,13 @@ import jm.music.data.Score;
 
 import static application.Consts.*;
 
+// generates a score for a section
 public class Section {
     private Score score;
     private TransitionMatrixGenerator transitionMatrixGenerator;
     private double[] parameters;
     private int key;
-    private int sectionLength;
+    private int sectionLength; // includes transitions
     private int startTransitionLength = 0;
     private int endTransitionLength = 0;
 
@@ -44,16 +45,19 @@ public class Section {
     int generateSection(int currentChord) {
         MusicGenerator musicGenerator = new MusicGenerator(key, parameters[PITCH], parameters[TEMPO], parameters[VELOCITY]);
 
+        // generate each chord and add to parts
         for (int i = 0; i < sectionLength; i++) {
             double[] row = transitionMatrixGenerator.generateRow(currentChord);
             currentChord = musicGenerator.addToParts(row);
         }
 
+        // create score from parts
         score.empty();
         score.addPart(musicGenerator.getChordsPart());
         score.addPart(musicGenerator.getLeadPart());
         score.addPart(musicGenerator.getBassPart());
 
+        // return current chord so it can be used for the next transition/section
         return currentChord;
     }
 

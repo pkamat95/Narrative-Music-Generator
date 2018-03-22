@@ -2,8 +2,8 @@ package application.lowbackend;
 
 import java.util.Random;
 
+// selects an index (chord) based on a given probability array (row)
 class ChordSelector {
-
     int selectChord(double[] row) {
 
         // get sum of row

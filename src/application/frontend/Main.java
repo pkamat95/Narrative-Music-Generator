@@ -16,7 +16,7 @@ public class Main extends Application {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("main_window_controller.fxml"));
         Parent root = loader.load();
 
-        // send main controller the primary stage for displaying save prompt for Midi file
+        // pass main window controller the primary stage for displaying save prompt for Midi file
         MainWindowController mainWindowController = loader.getController();
         mainWindowController.setStage(primaryStage);
 

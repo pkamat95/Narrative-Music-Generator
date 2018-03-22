@@ -24,12 +24,14 @@ public class TargetEmotionSelectorController {
     @FXML private Line crosshairY;
 
     void init() {
+        // set listener for valence arousal space
         valenceArousalModel.setOnMouseClicked(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent event) {
                 double x = event.getX();
                 double y = event.getY();
 
+                // restrict click boundaries
                 if (x < 0) {
                     x = 0;
                 }
@@ -56,7 +58,6 @@ public class TargetEmotionSelectorController {
     void setValence(double valence) {
         valenceText.setText(String.format("%.2f", valence));
         setCrosshairValence(valence);
-
     }
 
     void setArousal(double arousal) {
@@ -69,20 +70,25 @@ public class TargetEmotionSelectorController {
     }
 
     public void handleSetTargetEmotionButton() {
+        // set valence and arousal for section and update text in main window
         mainWindowController.setValenceAndArousal(Double.parseDouble(valenceText.getText()), Double.parseDouble(arousalText.getText()), index);
         mainWindowController.updateParametersText(index);
 
+        // close target emotion selector
         Stage stage = (Stage) setTargetEmotionButton.getScene().getWindow();
         stage.close();
     }
 
+    // set horizontal location of crosshair
     private void setCrosshairValence(double valence) {
         double x = valence * VALENCE_AROUSAL_MODEL_SIZE;
 
+        // value adjustments found through experimentation
         AnchorPane.setLeftAnchor(crosshairX, x - CROSSHAIR_SIZE - 1);
         AnchorPane.setLeftAnchor(crosshairY, x - CROSSHAIR_SIZE - 1);
     }
 
+    // set vertical location of crosshair
     private void setCrosshairArousal(double arousal) {
         double y = VALENCE_AROUSAL_MODEL_SIZE - (arousal * VALENCE_AROUSAL_MODEL_SIZE);
 
@@ -91,6 +97,7 @@ public class TargetEmotionSelectorController {
             y = 228;
         }
 
+        // value adjustments found through experimentation
         AnchorPane.setTopAnchor(crosshairX, y - 1);
         AnchorPane.setTopAnchor(crosshairY, y - 1);
     }
