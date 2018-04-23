@@ -113,6 +113,7 @@ public class MainWindowController implements Initializable {
     // only allow numbers up to the number 59
     private TextFormatter<String> secondsFormatter() {
         return new TextFormatter<>( change -> {
+            System.out.println(sectionDurationMinutesText.getText());
             if (change.getControlNewText().isEmpty() || change.getControlNewText().matches("[0-5]?[0-9]")) {
                 return change;
             }
@@ -291,7 +292,7 @@ public class MainWindowController implements Initializable {
         arousalText.setText("0.50");
     }
 
-    private void updateTransitionLengthArea(int index) {
+    private void updateTransitionLengthArea(int index){
         boolean isNotLast = (index < sectionList.size() - 1);
         if (isNotLast) {
             transitionLengthArea.setVisible(true);
@@ -582,8 +583,8 @@ public class MainWindowController implements Initializable {
             // interpolate tempo between section and sectionAfter for each bar in transition
             // use this to add up total transitionLengthInSeconds
             int i;
-            for (i = 1; i < transitionLength+1; i++) {
-                tempo = tempoBefore + (difference / transitionLength) * i;
+            for (i = 1; i <= transitionLength; i++) {
+                tempo = tempoBefore + (difference / (transitionLength+1)) * i;
                 transitionLengthInSeconds += (60 / tempo) * 4;
             }
 

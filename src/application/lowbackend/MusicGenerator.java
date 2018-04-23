@@ -120,6 +120,7 @@ public class MusicGenerator {
        gaps/overlaps between each section/transition bar are handled in the Composition class */
     private void updateStartTime() {
         startTime += PHRASE_DURATION * (60 / tempo);
+        System.out.println(startTime);
     }
 
     // linearly calculate velocity between min and max (dynamic is midi velocity)

@@ -97,7 +97,7 @@ public final class Consts {
     public static final int VELOCITY = 10;
 
     // GUI related constants
-    public static final int SECTION_MINIMUM_SECONDS = 5;
+    public static final int SECTION_MINIMUM_SECONDS = 6;
     public static final int MAX_SECTIONS = 9;
     public static final int MAX_TRANSITION_LENGTH = 24;
     public static final int VALENCE_AROUSAL_MODEL_SIZE = 230;

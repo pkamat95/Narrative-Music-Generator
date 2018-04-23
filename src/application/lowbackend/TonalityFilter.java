@@ -20,7 +20,7 @@ class TonalityFilter extends TransitionMatrixFilter {
                 row[i] *= (1 - mode) + (mode * (1 - filterValue));
             }
 
-            // scale all other diatonic chords such that they scale down the least whether mode is more major or more minor
+            // scale all other diatonic chords such that they scale down by an amount equal to the preferred transitions of the mode that's scaled down the least
             else if (isDiatonic(i)) {
                 double sf = 0.5;
                 if (mode > 0.5) sf = mode; // if mode is major

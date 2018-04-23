@@ -73,3 +73,5 @@ H
 src/META-INF/MANIFEST.MF,e/4/e4b1fd2293ba1e598e6bec4e0ee3b6b6851eb5a2
 a
 1.idea/artifacts/Narrative_Music_Generator_jar.xml,7/c/7cf6a2596f2e781e8a8265a6e56cb63905016456
+q
+Asrc/tests/application/frontend/SectionParameterContainerTest.java,4/8/483114865b919ea19887d2526d022074fa4ddef6

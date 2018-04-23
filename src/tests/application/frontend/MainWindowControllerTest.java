@@ -133,7 +133,7 @@ public class MainWindowControllerTest extends ApplicationTest {
         clickOn(sectionDurationSecondsText).type(KeyCode.DIGIT0);
         clickOn(sectionDurationMinutesText); // take the focus away
 
-        assertEquals("05", sectionDurationSecondsText.getText());
+        assertEquals("06", sectionDurationSecondsText.getText());
 
         sectionDurationMinutesText.clear();
         sectionDurationSecondsText.clear();
@@ -147,7 +147,7 @@ public class MainWindowControllerTest extends ApplicationTest {
         clickOn(sectionDurationMinutesText).type(KeyCode.BACK_SPACE).type(KeyCode.DIGIT0);
         clickOn(sectionDurationSecondsText); // take the focus away
 
-        assertEquals("05", sectionDurationSecondsText.getText());
+        assertEquals("06", sectionDurationSecondsText.getText());
     }
 
     @Test
