@@ -3,7 +3,7 @@ Prerequisites
 
 NMGS is a Java application and therefore requires the Java Runtime Environment (ver. 8+) to run. JRE 8 can be downloaded on multiple platforms including Windows, Mac OS and Linux here: http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html
 
-Once this is installed, run the jar file to start the application.
+Once this is installed, run the jar file (found in Narrative-Music-Generator/out/artifacts/) to start the application.
 
 Overview
 
